@@ -1,0 +1,11 @@
+# Created by Kenney (www.kenney.nl)
+
+newmtl border
+Kd 0.9811321 0.2823068 0.3744994
+
+newmtl _defaultMat
+Kd 1 1 1
+
+newmtl green
+Kd 0.7288358 0.8784314 0.4196078
+
