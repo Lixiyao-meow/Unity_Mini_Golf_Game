@@ -67,14 +67,5 @@ namespace UnityEngine.UI
         {
             instance.m_Clippers.Remove(c);
         }
-
-        /// <summary>
-        /// Disable a IClipper element
-        /// </summary>
-        /// <param name="c">The Element to try and disable.</param>
-        public static void Disable(IClipper c)
-        {
-            instance.m_Clippers.DisableItem(c);
-        }
     }
 }

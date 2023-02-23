@@ -11,7 +11,6 @@ namespace UnityEngine.UI.Collections
         //  - Fast random removal
         //  - Fast unique inclusion to the end
         //  - Sequential access
-        //  - Possibility to have disabled items registered
         //Downsides:
         //  - Uses more memory
         //  - Ordering is not persistent
@@ -23,64 +22,21 @@ namespace UnityEngine.UI.Collections
 
         readonly List<T> m_List = new List<T>();
         Dictionary<T, int> m_Dictionary = new Dictionary<T, int>();
-        int m_EnabledObjectCount = 0;
 
         public void Add(T item)
         {
-            Add(item, true);
-        }
-
-        public void Add(T item, bool isActive)
-        {
             m_List.Add(item);
             m_Dictionary.Add(item, m_List.Count - 1);
-            if (isActive)
-                EnableItem(item);
         }
 
-        public bool AddUnique(T item, bool isActive = true)
+        public bool AddUnique(T item)
         {
             if (m_Dictionary.ContainsKey(item))
-            {
-                if (isActive)
-                    EnableItem(item);
-                else
-                    DisableItem(item);
-                return false;
-            }
-
-            Add(item, isActive);
-
-            return true;
-        }
-
-        public bool EnableItem(T item)
-        {
-            if (!m_Dictionary.TryGetValue(item, out int index))
                 return false;
 
-            if (index < m_EnabledObjectCount)
-                return true;
+            m_List.Add(item);
+            m_Dictionary.Add(item, m_List.Count - 1);
 
-            if (index > m_EnabledObjectCount)
-                Swap(m_EnabledObjectCount, index);
-
-            m_EnabledObjectCount++;
-            return true;
-        }
-
-        public bool DisableItem(T item)
-        {
-            if (!m_Dictionary.TryGetValue(item, out int index))
-                return false;
-
-            if (index >= m_EnabledObjectCount)
-                return true;
-
-            if (index < m_EnabledObjectCount - 1)
-                Swap(index, m_EnabledObjectCount - 1);
-
-            m_EnabledObjectCount--;
             return true;
         }
 
@@ -108,7 +64,6 @@ namespace UnityEngine.UI.Collections
         {
             m_List.Clear();
             m_Dictionary.Clear();
-            m_EnabledObjectCount = 0;
         }
 
         public bool Contains(T item)
@@ -121,8 +76,7 @@ namespace UnityEngine.UI.Collections
             m_List.CopyTo(array, arrayIndex);
         }
 
-        public int Count { get { return m_EnabledObjectCount; } }
-        public int Capacity { get { return m_List.Count; } }
+        public int Count { get { return m_List.Count; } }
         public bool IsReadOnly { get { return false; } }
         public int IndexOf(T item)
         {
@@ -141,56 +95,24 @@ namespace UnityEngine.UI.Collections
         public void RemoveAt(int index)
         {
             T item = m_List[index];
+            m_Dictionary.Remove(item);
             if (index == m_List.Count - 1)
-            {
-                if (m_EnabledObjectCount == m_List.Count)
-                    m_EnabledObjectCount--;
-
                 m_List.RemoveAt(index);
-            }
             else
             {
                 int replaceItemIndex = m_List.Count - 1;
-                if (index < m_EnabledObjectCount - 1)
-                {
-                    Swap(--m_EnabledObjectCount, index);
-                    index = m_EnabledObjectCount;
-                }
-                else if (index == m_EnabledObjectCount - 1)
-                {
-                    m_EnabledObjectCount--;
-                }
-
-                Swap(replaceItemIndex, index);
+                T replaceItem = m_List[replaceItemIndex];
+                m_List[index] = replaceItem;
+                m_Dictionary[replaceItem] = index;
                 m_List.RemoveAt(replaceItemIndex);
             }
-            m_Dictionary.Remove(item);
-        }
-
-        private void Swap(int index1, int index2)
-        {
-            if (index1 == index2)
-                return;
-            T item1 = m_List[index1];
-            T item2 = m_List[index2];
-            m_List[index1] = item2;
-            m_List[index2] = item1;
-            m_Dictionary[item2] = index1;
-            m_Dictionary[item1] = index2;
         }
 
         public T this[int index]
         {
-            get
-            {
-                if ((uint)index >= (uint)m_EnabledObjectCount)
-                    throw new IndexOutOfRangeException();
-                return m_List[index];
-            }
+            get { return m_List[index]; }
             set
             {
-                //Order in the list should not be set manually since the order is not guaranteed.
-                //The item will be activated or not according to the old item's state.
                 T item = m_List[index];
                 m_Dictionary.Remove(item);
                 m_List[index] = value;

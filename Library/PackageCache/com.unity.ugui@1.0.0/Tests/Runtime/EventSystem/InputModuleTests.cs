@@ -156,11 +156,9 @@ public class InputModuleTests
     }
 
     [UnityTest]
-    public IEnumerator PointerEnterChildShouldNotFullyExit_NotSendPointerEventToParent()
+    public IEnumerator PointerEnterChildShouldNotFullyExit()
     {
-        m_StandaloneInputModule.sendPointerHoverToParent = false;
         PointerExitCallbackCheck callbackCheck = m_Image.gameObject.AddComponent<PointerExitCallbackCheck>();
-        m_NestedImage.gameObject.AddComponent<PointerExitCallbackCheck>();
         var screenMiddle = new Vector2(Screen.width / 2, Screen.height / 2);
 
         m_FakeBaseInput.MousePresent = true;
@@ -169,22 +167,6 @@ public class InputModuleTests
         m_FakeBaseInput.MousePosition = screenMiddle;
         yield return null;
         Assert.IsTrue(callbackCheck.pointerData.fullyExited == false);
-    }
-
-    [UnityTest]
-    public IEnumerator PointerEnterChildShouldNotExit_SendPointerEventToParent()
-    {
-        m_StandaloneInputModule.sendPointerHoverToParent = true;
-        PointerExitCallbackCheck callbackCheck = m_Image.gameObject.AddComponent<PointerExitCallbackCheck>();
-        m_NestedImage.gameObject.AddComponent<PointerExitCallbackCheck>();
-        var screenMiddle = new Vector2(Screen.width / 2, Screen.height / 2);
-
-        m_FakeBaseInput.MousePresent = true;
-        m_FakeBaseInput.MousePosition = screenMiddle - new Vector2(150, 150);
-        yield return null;
-        m_FakeBaseInput.MousePosition = screenMiddle;
-        yield return null;
-        Assert.IsTrue(callbackCheck.pointerData == null);
     }
 
     [UnityTest]
@@ -202,9 +184,8 @@ public class InputModuleTests
     }
 
     [UnityTest]
-    public IEnumerator PointerExitChildShouldReenter_NotSendPointerEventToParent()
+    public IEnumerator PointerExitChildShouldReenter()
     {
-        m_StandaloneInputModule.sendPointerHoverToParent = false;
         PointerEnterCallbackCheck callbackCheck = m_Image.gameObject.AddComponent<PointerEnterCallbackCheck>();
         var screenMiddle = new Vector2(Screen.width / 2, Screen.height / 2);
 
@@ -216,22 +197,6 @@ public class InputModuleTests
         m_FakeBaseInput.MousePosition = screenMiddle - new Vector2(150, 150);
         yield return null;
         Assert.IsTrue(callbackCheck.pointerData.reentered == true);
-    }
-
-    [UnityTest]
-    public IEnumerator PointerExitChildShouldNotSendEnter_SendPointerEventToParent()
-    {
-        m_StandaloneInputModule.sendPointerHoverToParent = true;
-        m_NestedImage.gameObject.AddComponent<PointerEnterCallbackCheck>();
-        var screenMiddle = new Vector2(Screen.width / 2, Screen.height / 2);
-
-        m_FakeBaseInput.MousePresent = true;
-        m_FakeBaseInput.MousePosition = screenMiddle;
-        yield return null;
-        PointerEnterCallbackCheck callbackCheck = m_Image.gameObject.AddComponent<PointerEnterCallbackCheck>();
-        m_FakeBaseInput.MousePosition = screenMiddle - new Vector2(150, 150);
-        yield return null;
-        Assert.IsTrue(callbackCheck.pointerData == null);
     }
 
     [UnityTest]

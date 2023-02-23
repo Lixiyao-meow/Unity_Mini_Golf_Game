@@ -289,11 +289,21 @@ namespace UnityEngine.UIElements
         {
             if (e.type == EventType.KeyUp)
             {
-                SendKeyUpEvent(e);
+                if (e.character == '\0')
+                {
+                    SendKeyUpEvent(e, e.keyCode, e.modifiers);
+                }
             }
             else if (e.type == EventType.KeyDown)
             {
-                SendKeyDownEvent(e);
+                if (e.character == '\0')
+                {
+                    SendKeyDownEvent(e, e.keyCode, e.modifiers);
+                }
+                else
+                {
+                    SendTextEvent(e, e.character, e.modifiers);
+                }
             }
         }
 
@@ -314,17 +324,25 @@ namespace UnityEngine.UIElements
             }
         }
 
-        private void SendKeyUpEvent(Event e)
+        private void SendKeyUpEvent(Event e, KeyCode keyCode, EventModifiers modifiers)
         {
-            using (var ev = KeyUpEvent.GetPooled('\0', e.keyCode, e.modifiers))
+            using (var ev = KeyUpEvent.GetPooled('\0', keyCode, modifiers))
             {
                 SendEvent(ev, e);
             }
         }
 
-        private void SendKeyDownEvent(Event e)
+        private void SendKeyDownEvent(Event e, KeyCode keyCode, EventModifiers modifiers)
         {
-            using (var ev = KeyDownEvent.GetPooled(e.character, e.keyCode, e.modifiers))
+            using (var ev = KeyDownEvent.GetPooled('\0', keyCode, modifiers))
+            {
+                SendEvent(ev, e);
+            }
+        }
+
+        private void SendTextEvent(Event e, char c, EventModifiers modifiers)
+        {
+            using (var ev = KeyDownEvent.GetPooled(c, KeyCode.None, modifiers))
             {
                 SendEvent(ev, e);
             }

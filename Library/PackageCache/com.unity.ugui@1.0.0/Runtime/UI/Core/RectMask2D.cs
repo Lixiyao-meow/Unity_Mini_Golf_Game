@@ -87,7 +87,7 @@ namespace UnityEngine.UI
         /// Returns a non-destroyed instance or a null reference.
         /// </remarks>
         [NonSerialized] private Canvas m_Canvas;
-        internal Canvas Canvas
+        private Canvas Canvas
         {
             get
             {
@@ -146,14 +146,8 @@ namespace UnityEngine.UI
             m_ClipTargets.Clear();
             m_MaskableTargets.Clear();
             m_Clippers.Clear();
-            ClipperRegistry.Disable(this);
-            MaskUtilities.Notify2DMaskStateChanged(this);
-        }
-
-        protected override void OnDestroy()
-        {
             ClipperRegistry.Unregister(this);
-            base.OnDestroy();
+            MaskUtilities.Notify2DMaskStateChanged(this);
         }
 
 #if UNITY_EDITOR
@@ -344,7 +338,6 @@ namespace UnityEngine.UI
 
         protected override void OnTransformParentChanged()
         {
-            m_Canvas = null;
             base.OnTransformParentChanged();
             m_ShouldRecalculateClipRects = true;
         }

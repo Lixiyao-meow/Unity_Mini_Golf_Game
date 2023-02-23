@@ -1276,6 +1276,8 @@ namespace UnityEngine.UI
         /// </example>
         public virtual void OnPointerEnter(PointerEventData eventData)
         {
+            if (eventData == null || eventData.pointerEnter == null || eventData.pointerEnter.GetComponentInParent<Selectable>() != this)
+                return;
             isPointerInside = true;
             EvaluateAndTransitionToSelectionState();
         }

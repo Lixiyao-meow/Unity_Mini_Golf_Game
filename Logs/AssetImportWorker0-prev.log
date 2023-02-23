@@ -1,0 +1,722 @@
+Unity Editor version:    2021.3.3f1 (af2e63e8f9bd)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.0.1 (Build 22A400)
+Darwin version:          22.1.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.3f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62309
+Successfully changed project path to: /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project
+/Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 178.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.3f1 (af2e63e8f9bd)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.3f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.3f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.3f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.3f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56692
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.3f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001804 seconds.
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 100.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.537 seconds
+Domain Reload Profiling:
+	ReloadAssembly (537ms)
+		BeginReloadAssembly (80ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (368ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (82ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (227ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (100ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (92ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.011911 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  0.821 seconds
+Domain Reload Profiling:
+	ReloadAssembly (821ms)
+		BeginReloadAssembly (57ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (11ms)
+		EndReloadAssembly (679ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (235ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (279ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.3f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.21 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3600 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (84.0 KB). Loaded Objects now: 4047.
+Memory consumption went from 118.5 MB to 118.4 MB.
+Total: 4.455208 ms (FindLiveObjects: 0.506083 ms CreateObjectMapping: 0.056042 ms MarkObjects: 3.764208 ms  DeleteObjects: 0.128041 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2307141.780634 seconds.
+  path: Assets/Meterial/LineMaterial.mat
+  artifactKey: Guid(2d7a61608a0db4ae194071c0ddea288a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Meterial/LineMaterial.mat using Guid(2d7a61608a0db4ae194071c0ddea288a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dabc21e379b9029ca2678aae64a1434') in 0.404354 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004530 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x17feeb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.890 seconds
+Domain Reload Profiling:
+	ReloadAssembly (890ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (707ms)
+			LoadAssemblies (58ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (268ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (291ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (187ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3582 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (64.9 KB). Loaded Objects now: 4090.
+Memory consumption went from 202.9 MB to 202.8 MB.
+Total: 3.472458 ms (FindLiveObjects: 0.163250 ms CreateObjectMapping: 0.077000 ms MarkObjects: 3.132958 ms  DeleteObjects: 0.098542 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 50.120858 seconds.
+  path: Assets/Models/Mini Golf/ball_blue.fbx
+  artifactKey: Guid(b5fbcae0b59134a158afb6c92ce54e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/ball_blue.fbx using Guid(b5fbcae0b59134a158afb6c92ce54e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5216ae13d13c8771c1bbcd12d4ced9d1') in 1.143227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Models/Mini Golf/hillCorner.fbx
+  artifactKey: Guid(1cc3189f9bbac4ec6afef3563c257bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/hillCorner.fbx using Guid(1cc3189f9bbac4ec6afef3563c257bed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58476e689212e4d9f0b42aa98f3e0a53') in 0.025615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Models/Mini Golf/innerCorner.fbx
+  artifactKey: Guid(d44d9da569e9941a58a287cf22b8c8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/innerCorner.fbx using Guid(d44d9da569e9941a58a287cf22b8c8ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a21379495d5c56864ac0de41bc170a') in 0.046553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Models/Mini Golf/flag_red.fbx
+  artifactKey: Guid(3cf92f050fe5247979634e4e59f2c3c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/flag_red.fbx using Guid(3cf92f050fe5247979634e4e59f2c3c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac524e15ff60ab0359ba7b3f6e23183') in 0.021289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Models/Mini Golf/rampSharp.fbx
+  artifactKey: Guid(6902bbd4168b541fca9c9d70ca5d57e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/rampSharp.fbx using Guid(6902bbd4168b541fca9c9d70ca5d57e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a1add21040942ef648805d06316fae7') in 0.022685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Models/Mini Golf/ramp.fbx
+  artifactKey: Guid(d30b6e769a1f64a10924272162bde456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/ramp.fbx using Guid(d30b6e769a1f64a10924272162bde456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3e5319dd73650323ecde1f3a7736d72') in 0.019755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Models/Mini Golf/flag_blue.fbx
+  artifactKey: Guid(1c1b2c3979196423a803c05eea3f9564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/flag_blue.fbx using Guid(1c1b2c3979196423a803c05eea3f9564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1fb649405860c7a54a1c901bd13ff91') in 0.019918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Models/Mini Golf/rampLarge.fbx
+  artifactKey: Guid(6e7ca0275f289437881a8923263e0557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/rampLarge.fbx using Guid(6e7ca0275f289437881a8923263e0557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a522749fba87d2e8855573d4b0ddb5a') in 0.019223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Models/Mini Golf/holeRound.fbx
+  artifactKey: Guid(4ffbf874010914eb4b8e98f57540c5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/holeRound.fbx using Guid(4ffbf874010914eb4b8e98f57540c5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf20fd2004dfa4885727282668d79f64') in 0.023504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Models/Mini Golf/open.fbx
+  artifactKey: Guid(928d723ee104a44aaa21283815c5f1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/open.fbx using Guid(928d723ee104a44aaa21283815c5f1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7a63d7c7c6a33ed32f81ad1912f1f3b') in 0.015173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Models/Mini Golf/obstacleTriangle.fbx
+  artifactKey: Guid(4a4a19bf3309f475db1f00cfd53edb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/obstacleTriangle.fbx using Guid(4a4a19bf3309f475db1f00cfd53edb8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aed0ef84171b917fbb257ea853b1ee2f') in 0.021355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Models/Mini Golf/narrowRound.fbx
+  artifactKey: Guid(0ff14c49182484419a01d79f6ae461e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/narrowRound.fbx using Guid(0ff14c49182484419a01d79f6ae461e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '637d0cd98ba140d96eefce3e15c7acc1') in 0.021122 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Models/Mini Golf/obstacleDiamond.fbx
+  artifactKey: Guid(e852fa4d7fb5a4209b521f5f4e27f609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/obstacleDiamond.fbx using Guid(e852fa4d7fb5a4209b521f5f4e27f609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3aaf2b6dddea66d286bb858a8d83514') in 0.019238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Models/Mini Golf/narrowSquare.fbx
+  artifactKey: Guid(977384bd2542e49fab2f757c4f056645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/narrowSquare.fbx using Guid(977384bd2542e49fab2f757c4f056645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162a381fe86de0f49dc1922926613f5c') in 0.019572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Models/Mini Golf/bumpDown.fbx
+  artifactKey: Guid(e9cefb291966e463ca4de3f00f02e72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/bumpDown.fbx using Guid(e9cefb291966e463ca4de3f00f02e72e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c83f5cea0ad260079068b686c981dc2b') in 0.014580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Models/Mini Golf/hillSquare.fbx
+  artifactKey: Guid(e9bb9baa7dac541fba9e1f2c9f8312f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/hillSquare.fbx using Guid(e9bb9baa7dac541fba9e1f2c9f8312f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06854f0c9554ae4da250b043b840bf5f') in 0.017888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Models/Mini Golf/rampD.fbx
+  artifactKey: Guid(e7554fe95c3d0454d9ca3be1f7b69b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/rampD.fbx using Guid(e7554fe95c3d0454d9ca3be1f7b69b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '307d34b6bfa8115b9e7f8d448c53c4cc') in 0.019624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Models/Mini Golf/bumpDownWalls.fbx
+  artifactKey: Guid(3f3d4bd489781403a9bdcbfcf83921ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/bumpDownWalls.fbx using Guid(3f3d4bd489781403a9bdcbfcf83921ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b747f9d4d3516d7add4c08a29d7934') in 0.019713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Models/Mini Golf/bumpWalls.fbx
+  artifactKey: Guid(cf11cc923c3994ae78a5ab914416efcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/bumpWalls.fbx using Guid(cf11cc923c3994ae78a5ab914416efcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7dfb80c8ac2bda79d69b69a40db0a1b') in 0.018966 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Models/Mini Golf/rampB.fbx
+  artifactKey: Guid(2f6ba51c8b7014224aaeaa591211c224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/rampB.fbx using Guid(2f6ba51c8b7014224aaeaa591211c224) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52db4761bd67faeb9802db19171d25a2') in 0.018429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Models/Mini Golf/crest.fbx
+  artifactKey: Guid(988ea8030b9bc4c5b88b67d0487c0f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/crest.fbx using Guid(988ea8030b9bc4c5b88b67d0487c0f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad9d32cb190b23a80ad69e1dcdd34c4') in 0.020478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.660662 seconds.
+  path: Assets/Models/Mini Golf/rampSide.fbx
+  artifactKey: Guid(71a248c3a29d24ebcaa68bd1c9657810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/rampSide.fbx using Guid(71a248c3a29d24ebcaa68bd1c9657810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5af0844b4d20760fccbe11079e5bddd') in 0.064574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Models/Mini Golf/skewLargeCorner.fbx
+  artifactKey: Guid(e7a40a429aade4dfabab370753935f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/skewLargeCorner.fbx using Guid(e7a40a429aade4dfabab370753935f0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd831eee64a1d223168d436cac8baa23f') in 0.015827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Models/Mini Golf/side.fbx
+  artifactKey: Guid(995e6800e121c49d2a2d966fcd626580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/side.fbx using Guid(995e6800e121c49d2a2d966fcd626580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8968be37c589c97bdd04d06ec7b5a99e') in 0.016199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Models/Mini Golf/roundCornerB.fbx
+  artifactKey: Guid(b6734ac21116e455688b5aac20494a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/roundCornerB.fbx using Guid(b6734ac21116e455688b5aac20494a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b190a6d061bcbc04cdcfdc91e7b1f0bc') in 0.017784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Models/Mini Golf/roundLargeCorner.fbx
+  artifactKey: Guid(497f9f30d073f490385f9b405327e31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/roundLargeCorner.fbx using Guid(497f9f30d073f490385f9b405327e31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0d12d80708945d5526516dfb2e6dc3') in 0.030526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.478299 seconds.
+  path: Assets/Models/Mini Golf/skewLargeCornerOpen.fbx
+  artifactKey: Guid(bc9115d289f394bf889889e40e885c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/skewLargeCornerOpen.fbx using Guid(bc9115d289f394bf889889e40e885c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '391bddd21de8b15a4130607c6f8a8161') in 0.021400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Models/Mini Golf/splitWallsToOpen.fbx
+  artifactKey: Guid(50d7ade092a294968a276cddcc09dad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/splitWallsToOpen.fbx using Guid(50d7ade092a294968a276cddcc09dad1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f80bafce118c3c77ffe96b4c813756') in 0.015224 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Models/Mini Golf/splitStart.fbx
+  artifactKey: Guid(76c0e929f68f54caf8eb8b3d7cd1f01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/splitStart.fbx using Guid(76c0e929f68f54caf8eb8b3d7cd1f01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24034be27064e29d0f21be86eed42325') in 0.015543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Models/Mini Golf/squareCornerA.fbx
+  artifactKey: Guid(c6e91e7760eeb47e088c0a2556255624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/squareCornerA.fbx using Guid(c6e91e7760eeb47e088c0a2556255624) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee2aff8463e8ad15e4e0c950d9ba38eb') in 0.015373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Models/Mini Golf/support_bottom.fbx
+  artifactKey: Guid(0b1835cad9d6e483eb74ff6c25ef9f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/support_bottom.fbx using Guid(0b1835cad9d6e483eb74ff6c25ef9f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5ff36504415bc08998d3d2fd6b1c83') in 0.013733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.716654 seconds.
+  path: Assets/Models/Mini Golf/supports.fbx
+  artifactKey: Guid(e955cc812949b46179480e216fbd7fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/supports.fbx using Guid(e955cc812949b46179480e216fbd7fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3fbcb9d5353d9c44953987632a86ab2') in 0.013386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Models/Mini Golf/wallLeft.fbx
+  artifactKey: Guid(a198eae2878ad4b418eb8e1ebd96713d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/wallLeft.fbx using Guid(a198eae2878ad4b418eb8e1ebd96713d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086ed3f66a3e6ab6c1543dad681294e0') in 0.018019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Models/Mini Golf/tunnelWide.fbx
+  artifactKey: Guid(ea524204bb8b74800b2c280de48faa85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/tunnelWide.fbx using Guid(ea524204bb8b74800b2c280de48faa85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd93c720f0e634a6143cafd0dd5d8d7') in 0.020365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Models/Mini Golf/wallRight.fbx
+  artifactKey: Guid(0412015b8fcab4811984bdfc01489613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/wallRight.fbx using Guid(0412015b8fcab4811984bdfc01489613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8dc0c2ca81ee9cfafa0926d41e05428') in 0.017372 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Models/Mini Golf/wallsToOpen.fbx
+  artifactKey: Guid(122aa47f9955848b7af09836421240e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Mini Golf/wallsToOpen.fbx using Guid(122aa47f9955848b7af09836421240e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b54e69414f35cfee1bcfeead0e51e7') in 0.016963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 78.327562 seconds.
+  path: Assets/New Folder
+  artifactKey: Guid(4261f71b87f2f4ba296fc00ed3c5f092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Folder using Guid(4261f71b87f2f4ba296fc00ed3c5f092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8500a281b5351048b4fffa33c3cac2') in 0.001572 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.926692 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(4261f71b87f2f4ba296fc00ed3c5f092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(4261f71b87f2f4ba296fc00ed3c5f092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '472e738b423c5e46b53532e8325e7721') in 0.000704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.411094 seconds.
+  path: Assets/Prefabs/straight.prefab
+  artifactKey: Guid(674c4e3f137ff4e25897f89327d19769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/straight.prefab using Guid(674c4e3f137ff4e25897f89327d19769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e666091a915a72ae0d3aec0667785e55') in 0.105790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1120.854330 seconds.
+  path: Assets/Prefabs/end.prefab
+  artifactKey: Guid(9c2365b47ae354bb1ad3616881b1d99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/end.prefab using Guid(9c2365b47ae354bb1ad3616881b1d99d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9016ea1c5a811bcb782faa75dc1eb4d1') in 0.048179 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006961 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x17feeb000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 2.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.440 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1442ms)
+		BeginReloadAssembly (181ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1140ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (392ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (509ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (125ms)
+				ProcessInitializeOnLoadAttributes (323ms)
+				ProcessInitializeOnLoadMethodAttributes (40ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3582 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (64.0 KB). Loaded Objects now: 4097.
+Memory consumption went from 365.8 MB to 365.7 MB.
+Total: 6.430917 ms (FindLiveObjects: 0.302458 ms CreateObjectMapping: 0.180166 ms MarkObjects: 5.795750 ms  DeleteObjects: 0.151666 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006178 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16cf73000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.397 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1398ms)
+		BeginReloadAssembly (152ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1142ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (408ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (69ms)
+			SetupLoadedEditorAssemblies (499ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (320ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3582 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (64.8 KB). Loaded Objects now: 4101.
+Memory consumption went from 370.0 MB to 370.0 MB.
+Total: 6.109917 ms (FindLiveObjects: 0.274292 ms CreateObjectMapping: 0.128708 ms MarkObjects: 5.584750 ms  DeleteObjects: 0.120750 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1147.732656 seconds.
+  path: Assets/New Physic Material.physicMaterial
+  artifactKey: Guid(ce2ac7f6efc5845d6a315cae12ae102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Physic Material.physicMaterial using Guid(ce2ac7f6efc5845d6a315cae12ae102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e99bd997106ead8d94822dc8d808d7e') in 0.129614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.831242 seconds.
+  path: Assets/Ball Physic Material.physicMaterial
+  artifactKey: Guid(ce2ac7f6efc5845d6a315cae12ae102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Physic Material.physicMaterial using Guid(ce2ac7f6efc5845d6a315cae12ae102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e328d6924e0a0a7412260ecff9699850') in 0.023954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.261121 seconds.
+  path: Assets/Ball Physic Material.physicMaterial
+  artifactKey: Guid(ce2ac7f6efc5845d6a315cae12ae102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Physic Material.physicMaterial using Guid(ce2ac7f6efc5845d6a315cae12ae102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03cc7485913f1894c2d68320c419c9ad') in 0.017279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.171305 seconds.
+  path: Assets/Ball Physic Material.physicMaterial
+  artifactKey: Guid(ce2ac7f6efc5845d6a315cae12ae102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ball Physic Material.physicMaterial using Guid(ce2ac7f6efc5845d6a315cae12ae102b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270b7ffcea88e69f98c41967f6ce2c38') in 0.018706 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005123 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16cf73000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.346 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1348ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (1079ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (379ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (469ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (301ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.61 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3582 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (63.8 KB). Loaded Objects now: 4105.
+Memory consumption went from 453.2 MB to 453.2 MB.
+Total: 6.074500 ms (FindLiveObjects: 0.260625 ms CreateObjectMapping: 0.147541 ms MarkObjects: 5.522042 ms  DeleteObjects: 0.142250 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006403 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16cf73000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/lixiyao/Desktop/UCL/0113 Virtual Environment/Golf_test/My project/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 1.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.443 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1444ms)
+		BeginReloadAssembly (164ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1163ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (415ms)
+			ReleaseScriptCaches (8ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (495ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (316ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3582 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (64.8 KB). Loaded Objects now: 4109.
+Memory consumption went from 457.5 MB to 457.4 MB.
+Total: 7.743167 ms (FindLiveObjects: 0.331208 ms CreateObjectMapping: 0.223792 ms MarkObjects: 6.991542 ms  DeleteObjects: 0.195291 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
