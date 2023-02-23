@@ -11,6 +11,7 @@ public class BallController : MonoBehaviour
     public float lineLength;
     public Slider powerSlider;
     public TextMeshProUGUI puttCountLaber;
+    public float minHoleTime;
 
     private LineRenderer line;
     private Rigidbody ball;
@@ -18,6 +19,8 @@ public class BallController : MonoBehaviour
     private float powerUpTime;
     private float power;
     private int putts;
+    private float holeTime;
+    private Vector3 lastPosition;
 
     void Awake(){
         ball = GetComponent<Rigidbody>();
@@ -26,27 +29,38 @@ public class BallController : MonoBehaviour
     }
 
     void Update(){
-        if (Input.GetKey(KeyCode.A)){
-            angle -= changeAngleSpeed * Time.deltaTime;
+        // if ball stops moving, actions below are allowed
+        if (ball.velocity.magnitude < 0.01f){
+            if (Input.GetKey(KeyCode.A)){
+                angle -= changeAngleSpeed * Time.deltaTime;
+            }
+            if (Input.GetKey(KeyCode.D)){
+                angle += changeAngleSpeed * Time.deltaTime;
+            }
+            if (Input.GetKeyUp(KeyCode.Space)){
+                Putt();
+            }
+            if (Input.GetKey(KeyCode.Space)){
+                PowerUp();
+            }
+            UpdateLinePositions();
         }
-        if (Input.GetKey(KeyCode.D)){
-            angle += changeAngleSpeed * Time.deltaTime;
+        // if ball is still moving
+        else{
+            line.enabled = false;
+
         }
-        if (Input.GetKeyUp(KeyCode.Space)){
-            Putt();
-        }
-        if (Input.GetKey(KeyCode.Space)){
-            PowerUp();
-        }
-        UpdateLinePositions();
     }
 
     private void UpdateLinePositions(){
+        if (holeTime == 0) {line.enabled = true;}
+
         line.SetPosition(0, transform.position);
         line.SetPosition(1, transform.position + Quaternion.Euler(0, angle, 0) * Vector3.forward * lineLength);
     }
 
     private void Putt(){
+        lastPosition = transform.position;
         ball.AddForce(Quaternion.Euler(0, angle, 0) * Vector3.forward * maxPower * power, ForceMode.Impulse);
         power = 0;
         powerSlider.value = 0;
@@ -61,4 +75,37 @@ public class BallController : MonoBehaviour
         powerSlider.value = power;
     }
 
+    private void OnTriggerStay(Collider other){
+        if (other.tag == "Hole"){
+            CountHoleTime();
+        }
+    }
+
+    private void CountHoleTime(){
+        holeTime += Time.deltaTime;
+        // player has finished, move to the next player
+        if (holeTime >= minHoleTime){
+            Debug.Log("I'm in the hole and it took me " + putts + " putts to get in.");
+            holeTime = 0;
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other){
+        if (other.tag == "Hole"){
+            LeftHole();
+        }
+    }
+
+    private void LeftHole(){
+        holeTime = 0;
+    }
+
+    private void OnCollisionEnter(Collision collision){
+        if (collision.collider.tag == "Out Of Bounds"){
+            transform.position = lastPosition;
+            ball.velocity = Vector3.zero;
+            ball.angularVelocity = Vector3.zero;
+        }
+    }
 }
