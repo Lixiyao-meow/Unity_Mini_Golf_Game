@@ -31,10 +31,10 @@ public class BallController : MonoBehaviour
     void Update(){
         // if ball stops moving, actions below are allowed
         if (ball.velocity.magnitude < 0.01f){
-            if (Input.GetKey(KeyCode.A)){
+            if (Input.GetKey(KeyCode.Z)){
                 angle -= changeAngleSpeed * Time.deltaTime;
             }
-            if (Input.GetKey(KeyCode.D)){
+            if (Input.GetKey(KeyCode.C)){
                 angle += changeAngleSpeed * Time.deltaTime;
             }
             if (Input.GetKeyUp(KeyCode.Space)){
