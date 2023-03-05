@@ -1167,7 +1167,7 @@ namespace UnityEngine.UI
                 m_TextComponent.UnregisterDirtyVerticesCallback(UpdateLabel);
                 m_TextComponent.UnregisterDirtyMaterialCallback(UpdateCaretMaterial);
             }
-            CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(this);
+            CanvasUpdateRegistry.DisableCanvasElementForRebuild(this);
 
             // Clear needs to be called otherwise sync never happens as the object is disabled.
             if (m_CachedInputRenderer != null)
@@ -1178,6 +1178,12 @@ namespace UnityEngine.UI
             m_Mesh = null;
 
             base.OnDisable();
+        }
+
+        protected override void OnDestroy()
+        {
+            CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(this);
+            base.OnDestroy();
         }
 
         IEnumerator CaretBlink()

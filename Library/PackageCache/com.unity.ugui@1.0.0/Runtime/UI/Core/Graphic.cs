@@ -333,7 +333,7 @@ namespace UnityEngine.UI
 
         protected override void OnBeforeTransformParentChanged()
         {
-            GraphicRegistry.UnregisterGraphicForCanvas(canvas, this);
+            GraphicRegistry.DisableGraphicForCanvas(canvas, this);
             LayoutRebuilder.MarkLayoutForRebuild(rectTransform);
         }
 
@@ -544,8 +544,8 @@ namespace UnityEngine.UI
 #if UNITY_EDITOR
             GraphicRebuildTracker.UnTrackGraphic(this);
 #endif
-            GraphicRegistry.UnregisterGraphicForCanvas(canvas, this);
-            CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(this);
+            GraphicRegistry.DisableGraphicForCanvas(canvas, this);
+            CanvasUpdateRegistry.DisableCanvasElementForRebuild(this);
 
             if (canvasRenderer != null)
                 canvasRenderer.Clear();
@@ -557,6 +557,11 @@ namespace UnityEngine.UI
 
         protected override void OnDestroy()
         {
+#if UNITY_EDITOR
+            GraphicRebuildTracker.UnTrackGraphic(this);
+#endif
+            GraphicRegistry.UnregisterGraphicForCanvas(canvas, this);
+            CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(this);
             if (m_CachedMesh)
                 Destroy(m_CachedMesh);
             m_CachedMesh = null;
@@ -573,7 +578,10 @@ namespace UnityEngine.UI
             m_Canvas = null;
 
             if (!IsActive())
+            {
+                GraphicRegistry.UnregisterGraphicForCanvas(currentCanvas, this);
                 return;
+            }
 
             CacheCanvas();
 
@@ -845,6 +853,9 @@ namespace UnityEngine.UI
                     var group = components[i] as CanvasGroup;
                     if (group != null)
                     {
+                        if (!group.enabled)
+                            continue;
+
                         if (ignoreParentGroups == false && group.ignoreParentGroups)
                         {
                             ignoreParentGroups = true;
