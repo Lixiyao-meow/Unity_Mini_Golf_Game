@@ -6,16 +6,9 @@ using UnityEngine.UI;
 
 public class BallController : MonoBehaviour
 {
-    public float maxPower;
-    public float changeAngleSpeed;
-    public Slider powerSlider;
-    public TextMeshProUGUI puttCountLaber;
     public float minHoleTime;
 
     private Rigidbody ball;
-    private float angle;
-    private float powerUpTime;
-    private float power;
     private int putts;
     private float holeTime;
     private Vector3 lastPosition;
@@ -26,38 +19,14 @@ public class BallController : MonoBehaviour
     }
 
     void Update(){
-        // if ball stops moving, actions below are allowed
-        if (ball.velocity.magnitude < 0.01f){
-            if (Input.GetKey(KeyCode.Z)){
-                angle -= changeAngleSpeed * Time.deltaTime;
-            }
-            if (Input.GetKey(KeyCode.C)){
-                angle += changeAngleSpeed * Time.deltaTime;
-            }
-            if (Input.GetKeyUp(KeyCode.Space)){
-                Putt();
-            }
-            if (Input.GetKey(KeyCode.Space)){
-                PowerUp();
-            }
+
+    }
+
+    private void Putt(Collision collision){
+        if (collision.collider.tag == "Putt"){
+            putts++;
+            Debug.Log("Putts: " + putts);
         }
-
-    }
-
-    private void Putt(){
-        lastPosition = transform.position;
-        ball.AddForce(Quaternion.Euler(0, angle, 0) * Vector3.forward * maxPower * power, ForceMode.Impulse);
-        power = 0;
-        powerSlider.value = 0;
-        powerUpTime = 0;
-        putts++;
-        puttCountLaber.text = putts.ToString();
-    }
-
-    private void PowerUp(){
-        powerUpTime += Time.deltaTime;
-        power = Mathf.PingPong(powerUpTime, 1);
-        powerSlider.value = power;
     }
 
     private void OnTriggerStay(Collider other){
