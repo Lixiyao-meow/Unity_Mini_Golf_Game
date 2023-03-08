@@ -8,12 +8,10 @@ public class BallController : MonoBehaviour
 {
     public float maxPower;
     public float changeAngleSpeed;
-    public float lineLength;
     public Slider powerSlider;
     public TextMeshProUGUI puttCountLaber;
     public float minHoleTime;
 
-    private LineRenderer line;
     private Rigidbody ball;
     private float angle;
     private float powerUpTime;
@@ -24,7 +22,6 @@ public class BallController : MonoBehaviour
 
     void Awake(){
         ball = GetComponent<Rigidbody>();
-        line = GetComponent<LineRenderer>();
         ball.maxAngularVelocity = 1000;
     }
 
@@ -43,20 +40,8 @@ public class BallController : MonoBehaviour
             if (Input.GetKey(KeyCode.Space)){
                 PowerUp();
             }
-            UpdateLinePositions();
         }
-        // if ball is still moving
-        else{
-            line.enabled = false;
 
-        }
-    }
-
-    private void UpdateLinePositions(){
-        if (holeTime == 0) {line.enabled = true;}
-
-        line.SetPosition(0, transform.position);
-        line.SetPosition(1, transform.position + Quaternion.Euler(0, angle, 0) * Vector3.forward * lineLength);
     }
 
     private void Putt(){
