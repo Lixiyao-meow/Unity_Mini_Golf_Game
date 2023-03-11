@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 283757592586567064}
   - component: {fileID: 2599961609541634386}
   - component: {fileID: 8519768973286469706}
+  - component: {fileID: 6739916072133693340}
+  - component: {fileID: -4676005942771244555}
+  - component: {fileID: -6430526396497474375}
   m_Layer: 0
   m_Name: bumpDownWalls
   m_TagString: Untagged
@@ -27,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4545283484092885127}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.924257, y: 0.029, z: -1.0347956}
+  m_LocalPosition: {x: -4, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -97,3 +100,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddd9f708b0749564282f8fd5aef34957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &6739916072133693340
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545283484092885127}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &-4676005942771244555
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545283484092885127}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9206470090015873775, guid: 3f3d4bd489781403a9bdcbfcf83921ec, type: 3}
+--- !u!114 &-6430526396497474375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545283484092885127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faba25cdcfc2c684ca8861ce25d940b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCollider: {fileID: 0}
+  snapDistance: 0.2
+  notSnappable: 1

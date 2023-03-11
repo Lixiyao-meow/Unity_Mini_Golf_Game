@@ -12,8 +12,29 @@ public class SnapManager : MonoBehaviour
         snapComponents = new List<SnappingScript>(allSnappingScripts);
     }
 
-    private void Update() 
+    private void LateUpdate() 
     {
+        SnappingScript[] allSnappingScripts = FindObjectsOfType<SnappingScript>();
+
+        bool changed = false;
+
+        if (allSnappingScripts.Length != snapComponents.Count)
+        {
+            changed = true;
+        }
+
+        snapComponents = new List<SnappingScript>(allSnappingScripts);
+
+        if (changed)
+        {
+            foreach(SnappingScript snapComponent in snapComponents)
+            {
+                snapComponent.notSnappable = true;
+            }
+            
+            snapComponents[0].notSnappable = false;
+        }
+
         foreach(SnappingScript snapComponent in snapComponents)
         {
             foreach(SnappingScript otherSnapComponent in snapComponents)

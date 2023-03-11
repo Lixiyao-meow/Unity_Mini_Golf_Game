@@ -4,10 +4,12 @@ using UnityEngine;
 public class SnappingScript : MonoBehaviour
 {
     public Collider myCollider;
-    public float snapDistance = 0.2f;
+    public float snapDistance = 1.25f;
+    public bool notSnappable = false;
 
     private void Start() {
         myCollider = GetComponent<Collider>();
+        snapDistance = 1.25f;
     }
 
     public Collider getMyCollider()
@@ -17,13 +19,14 @@ public class SnappingScript : MonoBehaviour
 
     public void SnapToTarget(SnappingScript otherSnapComponent)
     {
+        if (notSnappable) return;
+
         Vector3 myClosestPoint = myCollider.ClosestPoint(otherSnapComponent.transform.position);
         Vector3 targetClosestPoint = otherSnapComponent.getMyCollider().ClosestPoint(myClosestPoint);
-        Vector3 offset = targetClosestPoint - myClosestPoint;
+        float offset = Vector3.Distance(otherSnapComponent.transform.position, transform.position);
 
-        if (offset.magnitude < snapDistance)
+        if (offset < snapDistance)
         {
-            transform.position += offset;
             Vector3 newPos = transform.position;
             if (Math.Abs(otherSnapComponent.transform.position.x - transform.position.x) < Math.Abs(otherSnapComponent.transform.position.z - transform.position.z))
                 newPos.x = otherSnapComponent.transform.position.x;

@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 5044441760525996587}
   - component: {fileID: 7054187620189644513}
   - component: {fileID: 4953459304430930701}
+  - component: {fileID: -4204994649317143962}
+  - component: {fileID: -198739816296123007}
+  - component: {fileID: -24825812696118578}
   m_Layer: 0
   m_Name: obstacleBlock
   m_TagString: Untagged
@@ -99,3 +102,46 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5379316394883684701, guid: bbb5b21fc056643d0bb40e831e5e9436, type: 3}
+--- !u!54 &-4204994649317143962
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8855623004750808884}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &-198739816296123007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8855623004750808884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddd9f708b0749564282f8fd5aef34957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-24825812696118578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8855623004750808884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faba25cdcfc2c684ca8861ce25d940b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCollider: {fileID: 0}
+  snapDistance: 0.2
+  notSnappable: 1

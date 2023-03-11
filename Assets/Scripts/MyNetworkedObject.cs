@@ -8,7 +8,6 @@ using Ubiq.XR;
 public class MyNetworkedObject : MonoBehaviour, IGraspable
 {
 
-    // Spawn with peer scope ???
     public NetworkId NetworkId { get; set; }
     private bool owner;
     private Hand controller;

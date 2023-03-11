@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17749253, g: 0.22221655, b: 0.30437875, a: 1}
+  m_IndirectSpecularColor: {r: 0.17757998, g: 0.22232358, b: 0.30451977, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -254,6 +254,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: 2861190517782730271, guid: 7b4ae3d4676fa458caee82cb93c7c7e6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7095699877825179835, guid: 7b4ae3d4676fa458caee82cb93c7c7e6, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -808,6 +812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCollider: {fileID: 0}
   snapDistance: 0.1
+  notSnappable: 1
 --- !u!65 &227473080
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1096,6 +1101,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: -2608660080800272826, guid: 1c6a14daf94ac46d4aaf43f2526efdf1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1710171210448902111, guid: 1c6a14daf94ac46d4aaf43f2526efdf1, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -1255,6 +1264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCollider: {fileID: 0}
   snapDistance: 0.1
+  notSnappable: 1
 --- !u!65 &393981640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1275,6 +1285,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: 1614356523116422855, guid: 2f125a5a775bf46bca1c0d6afa1a304f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5054064352518003687, guid: 2f125a5a775bf46bca1c0d6afa1a304f, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -1603,6 +1617,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: -8774674024602272453, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_Name
       value: roundCornerC (1)
@@ -2073,6 +2091,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: 6623338940284353752, guid: d062c7fb0c7304acda9fe6bae8310ccc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6973629072831296164, guid: d062c7fb0c7304acda9fe6bae8310ccc, type: 3}
       propertyPath: m_Name
       value: splitStart1
@@ -2379,6 +2401,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: 6623338940284353752, guid: d062c7fb0c7304acda9fe6bae8310ccc, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6973629072831296164, guid: d062c7fb0c7304acda9fe6bae8310ccc, type: 3}
       propertyPath: m_Name
       value: splitStart2
@@ -2960,6 +2986,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: 1646260331287491243, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8080533305732766129, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
       propertyPath: m_Name
       value: straight (2)
@@ -3022,6 +3052,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: -2608660080800272826, guid: 1c6a14daf94ac46d4aaf43f2526efdf1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1710171210448902111, guid: 1c6a14daf94ac46d4aaf43f2526efdf1, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -3322,6 +3356,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: 4618318326388726002, guid: b91ff6cc7cbc14755ae6f6b549688770, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8191676743250304398, guid: b91ff6cc7cbc14755ae6f6b549688770, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -3458,6 +3496,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: 1646260331287491243, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8080533305732766129, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
       propertyPath: m_Name
       value: straight
@@ -4483,6 +4525,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: -8774674024602272453, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_Name
       value: roundCornerC
@@ -5331,6 +5377,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1853859727}
     m_Modifications:
+    - target: {fileID: -346573345499399373, guid: 97dafb5c8703344eeb83ada6aea262df, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6050068098177546018, guid: 97dafb5c8703344eeb83ada6aea262df, type: 3}
       propertyPath: m_RootOrder
       value: 33
