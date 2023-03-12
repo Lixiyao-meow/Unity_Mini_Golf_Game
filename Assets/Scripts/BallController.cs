@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
+using Ubiq.XR;
+using UnityEngine;
+using Ubiq.Spawning;
 
-public class BallController : MonoBehaviour
+public class BallController : MonoBehaviour, IGraspable
 {
     public float minHoleTime;
     public Text puttsCounter1;
@@ -12,6 +15,7 @@ public class BallController : MonoBehaviour
     public ClubController club;
 
     private Rigidbody ball;
+    private Hand follow;
     private int putts;
     private float holeTime;
     private Vector3 lastPosition; // get ball back when out of bounce
@@ -23,8 +27,28 @@ public class BallController : MonoBehaviour
         initialPosition = ball.position;        
     }
 
-    void Update(){
+    public void Grasp(Hand controller)
+    {
+        follow = controller;
+    }
 
+    public void Release(Hand controller)
+    {
+        follow = null;
+    }
+
+    private void Update()
+    {
+        if (follow != null)
+        {
+            transform.position = follow.transform.position;
+            transform.rotation = follow.transform.rotation;
+            ball.isKinematic = true;
+        }
+        else
+        {
+            ball.isKinematic = false;
+        }
     }
 
     private void Putt(Collision collision){
