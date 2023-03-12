@@ -10,11 +10,13 @@ public class ClubController : MonoBehaviour, IGraspable
     public GameObject ClubPrefab;
 
     private Hand follow;
-    private Rigidbody body;
+    private Rigidbody club;
+    private Vector3 initialPosition;
 
     private void Awake()
     {
-        body = GetComponent<Rigidbody>();
+        club = GetComponent<Rigidbody>();
+        initialPosition = club.position;
     }
 
     public void Grasp(Hand controller)
@@ -33,11 +35,17 @@ public class ClubController : MonoBehaviour, IGraspable
         {
             transform.position = follow.transform.position;
             transform.rotation = follow.transform.rotation;
-            body.isKinematic = true;
+            club.isKinematic = true;
         }
         else
         {
-            body.isKinematic = false;
+            club.isKinematic = false;
         }
+    }
+
+    public void BackToInitialPosition(){
+        transform.position = initialPosition;
+        club.velocity = Vector3.zero;
+        club.angularVelocity = Vector3.zero;
     }
 }
