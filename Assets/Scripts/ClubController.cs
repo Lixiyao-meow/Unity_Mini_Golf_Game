@@ -9,6 +9,8 @@ public class ClubController : MonoBehaviour, IGraspable
 {
     public GameObject ClubPrefab;
 
+    private Quaternion relativeRotation;
+    
     private Hand follow;
     private Rigidbody club;
     private Vector3 initialPosition;
@@ -22,24 +24,24 @@ public class ClubController : MonoBehaviour, IGraspable
     public void Grasp(Hand controller)
     {
         follow = controller;
+        club.isKinematic = true;
+        // Vector (A -> B) => (B - A)
+        relativeRotation =  transform.rotation;
     }
 
     public void Release(Hand controller)
     {
         follow = null;
+        club.isKinematic = false;
+        club.velocity = controller.velocity; // Set the club's velocity to the VR hand
     }
 
     private void Update()
     {
         if (follow != null)
         {
-            transform.position = follow.transform.position;
-            transform.rotation = follow.transform.rotation;
-            club.isKinematic = true;
-        }
-        else
-        {
-            club.isKinematic = false;
+            club.MovePosition(follow.transform.position);
+            club.MoveRotation(follow.transform.rotation);
         }
     }
 

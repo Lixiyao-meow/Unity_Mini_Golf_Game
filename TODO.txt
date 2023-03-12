@@ -16,3 +16,4 @@
 - Moving the player using the joystick (A)
 - Debug patch spawner (A)
 - Rotate grabbed objects (A)
+- Teleport avatar

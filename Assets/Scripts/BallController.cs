@@ -30,24 +30,24 @@ public class BallController : MonoBehaviour, IGraspable
     public void Grasp(Hand controller)
     {
         follow = controller;
+        ball.isKinematic = true;
     }
 
     public void Release(Hand controller)
     {
         follow = null;
+        ball.isKinematic = false;
+        ball.velocity = controller.velocity;
     }
 
     private void Update()
     {
         if (follow != null)
         {
-            transform.position = follow.transform.position;
-            transform.rotation = follow.transform.rotation;
-            ball.isKinematic = true;
-        }
-        else
-        {
-            ball.isKinematic = false;
+            ball.MovePosition(follow.transform.position);
+            ball.MoveRotation(follow.transform.rotation);
+            // transform.position = follow.transform.position;
+            // transform.rotation = follow.transform.rotation;
         }
     }
 
@@ -89,9 +89,10 @@ public class BallController : MonoBehaviour, IGraspable
 
     private void OnCollisionEnter(Collision collision){
         if (collision.collider.tag == "Out Of Bounds"){
-            transform.position = lastPosition;
-            ball.velocity = Vector3.zero;
-            ball.angularVelocity = Vector3.zero;
+            BackToInitialPosition();
+            // transform.position = lastPosition;
+            // ball.velocity = Vector3.zero;
+            // ball.angularVelocity = Vector3.zero;
         }
     }
 
