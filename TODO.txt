@@ -1,19 +1,15 @@
-- Score system for each participant (R)
-- Score panel (R)
-- A place to grab a ball and club (A)
-- Condition to only hit the ball at their turn (X)
-- Only show the current ball of the player (X)
-- Fixed ball in the beginning (X)
-- Handle turns after a player finishes (X)
-- Manage End Game (X + R)
-- Script for VR handle of inventory (A)
-- Manage start game (R)
-- Decorate arena (H)
-- Voice (A)
-- Game Controller class (R)
-- Club hit function (X)
-- Finish turn function (X)
-- Moving the player using the joystick (A)
-- Debug patch spawner (A)
-- Rotate grabbed objects (A)
+- Score system for each participant
+- Score panel
+- Condition to only hit the ball at their turn
+- Fixed ball in the beginning
+- Handle turns after a player finishes
+- Manage End Game
+- Script for VR handle of inventory
+- Manage start game
+- Finish turn function
+- Moving the player using the joystick
+- Rotate grabbed objects
 - Teleport avatar
+- How to get a list of avatars that are in the room
+- How to get the names of the avatars
+- Click with VR controllers
