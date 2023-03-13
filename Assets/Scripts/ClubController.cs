@@ -4,6 +4,7 @@ using System.Linq;
 using Ubiq.XR;
 using UnityEngine;
 using Ubiq.Spawning;
+using Ubiq.Messaging;
 
 public class ClubController : MonoBehaviour, IGraspable
 {
@@ -14,6 +15,14 @@ public class ClubController : MonoBehaviour, IGraspable
     private Hand follow;
     private Rigidbody club;
     private Vector3 initialPosition;
+
+    NetworkContext context;
+    Vector3 lastPosition;
+
+    void Start()
+    {
+        context = NetworkScene.Register(this);
+    }
 
     private void Awake()
     {
@@ -38,11 +47,37 @@ public class ClubController : MonoBehaviour, IGraspable
 
     private void Update()
     {
+        if(lastPosition != transform.localPosition)
+        {
+            lastPosition = transform.localPosition;
+            context.SendJson(new Message()
+            {
+                position = transform.localPosition
+            });
+        }
+
         if (follow != null)
         {
             club.MovePosition(follow.transform.position);
             club.MoveRotation(follow.transform.rotation);
         }
+    }
+
+    private struct Message
+    {
+        public Vector3 position;
+    }
+
+    public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
+    {
+        // Parse the message
+        var m = message.FromJson<Message>();
+
+        // Use the message to update the Component
+        transform.localPosition = m.position;
+
+        // Make sure the logic in Update doesn't trigger as a result of this message
+        lastPosition = transform.localPosition;
     }
 
     public void BackToInitialPosition(){

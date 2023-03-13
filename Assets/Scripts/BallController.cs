@@ -6,6 +6,7 @@ using System.Linq;
 using Ubiq.XR;
 using UnityEngine;
 using Ubiq.Spawning;
+using Ubiq.Messaging;
 
 public class BallController : MonoBehaviour, IGraspable
 {
@@ -20,6 +21,13 @@ public class BallController : MonoBehaviour, IGraspable
     private float holeTime;
     private Vector3 lastPosition; // get ball back when out of bounce
     private Vector3 initialPosition; // put ball back after one round
+    NetworkContext context;
+    Vector3 lastNetworkedPosition;
+
+    void Start()
+    {
+        context = NetworkScene.Register(this);
+    }
 
     void Awake(){
         ball = GetComponent<Rigidbody>();
@@ -42,6 +50,14 @@ public class BallController : MonoBehaviour, IGraspable
 
     private void Update()
     {
+        if (lastNetworkedPosition != transform.localPosition)
+        {
+            lastNetworkedPosition = transform.localPosition;
+            context.SendJson(new Message()
+            {
+                position = transform.localPosition
+            });
+        }
         if (follow != null)
         {
             ball.MovePosition(follow.transform.position);
@@ -49,6 +65,23 @@ public class BallController : MonoBehaviour, IGraspable
             // transform.position = follow.transform.position;
             // transform.rotation = follow.transform.rotation;
         }
+    }
+
+    private struct Message
+    {
+        public Vector3 position;
+    }
+
+    public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
+    {
+        // Parse the message
+        var m = message.FromJson<Message>();
+
+        // Use the message to update the Component
+        transform.localPosition = m.position;
+
+        // Make sure the logic in Update doesn't trigger as a result of this message
+        lastNetworkedPosition = transform.localPosition;
     }
 
     private void Putt(Collision collision){
