@@ -1,15 +1,10 @@
-- Score system for each participant
-- Score panel
 - Condition to only hit the ball at their turn
-- Fixed ball in the beginning
-- Handle turns after a player finishes
-- Manage End Game
-- Script for VR handle of inventory
-- Manage start game
-- Finish turn function
-- Moving the player using the joystick
-- Rotate grabbed objects
-- Teleport avatar
+
+- Q: VR click of inventory
+- Q: Networking for spawning
+- Q: Teleport avatar
+
+- Minor Q: referential change not work for joystick
 - How to get a list of avatars that are in the room
 - How to get the names of the avatars
-- Click with VR controllers
+- Change between scenes (original, snapping)
