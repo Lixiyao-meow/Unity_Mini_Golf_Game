@@ -5,9 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Samples/Ubiq/0.4.2/Samples/MinigolfUbiq 1.unity
+  - enabled: 0
+    path: Assets/Scene/MinigolfUbiq.unity
     guid: 292dfb502f1f246cbae9a86df3469fe7
+  - enabled: 0
+    path: Assets/Scene/Start Here - Local Loopback.unity
+    guid: 44835542044d9c1469efdf6740cdc7ba
+  - enabled: 0
+    path: Assets/Scene/Start Here.unity
+    guid: 2de505d34345ab340bdde30d419b24eb
+  - enabled: 1
+    path: Assets/Scene/Test.unity
+    guid: 826ba3bcd7dda4eb3890e283be20d90a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 76123612a4081481785033063d2f62f7, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: fc008002e4f0b43828ab53f3e857fe03, type: 2}
