@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hole
   - Out Of Bounds
+  - Putt
   layers:
   - Default
   - TransparentFX

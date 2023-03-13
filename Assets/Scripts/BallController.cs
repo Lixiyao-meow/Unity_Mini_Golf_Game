@@ -84,13 +84,6 @@ public class BallController : MonoBehaviour, IGraspable
         lastNetworkedPosition = transform.localPosition;
     }
 
-    private void Putt(Collision collision){
-        if (collision.collider.tag == "Putt"){
-            putts++;
-            puttsCounter1.text = putts.ToString();
-        }
-    }
-
     private void OnTriggerStay(Collider other){
         if (other.tag == "Hole"){
             CountHoleTime();
@@ -102,10 +95,7 @@ public class BallController : MonoBehaviour, IGraspable
         // player has finished, move to the next player
         if (holeTime >= minHoleTime){
             Debug.Log("I'm in the hole and it took me " + putts + " putts to get in.");
-            holeTime = 0;
-            putts = 0;
-            BackToInitialPosition(); // move ball back
-            club.BackToInitialPosition(); // move club back
+            StartAnotherRound();
         }
 
     }
@@ -121,11 +111,14 @@ public class BallController : MonoBehaviour, IGraspable
     }
 
     private void OnCollisionEnter(Collision collision){
+        // if ball fall out of bounds
         if (collision.collider.tag == "Out Of Bounds"){
             BackToInitialPosition();
-            // transform.position = lastPosition;
-            // ball.velocity = Vector3.zero;
-            // ball.angularVelocity = Vector3.zero;
+        }
+        // if club collide with the ball
+        if (collision.collider.tag == "Putt"){
+            putts++;
+            puttsCounter1.text = putts.ToString();
         }
     }
 
@@ -135,5 +128,10 @@ public class BallController : MonoBehaviour, IGraspable
         ball.angularVelocity = Vector3.zero;
     }
 
-
+    private void StartAnotherRound(){
+        holeTime = 0;
+        putts = 0;
+        BackToInitialPosition(); // move ball back
+        club.BackToInitialPosition(); // move club back
+    }
 }

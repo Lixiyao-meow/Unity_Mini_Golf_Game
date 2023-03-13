@@ -81,7 +81,7 @@ public class ClubController : MonoBehaviour, IGraspable
     }
 
     public void BackToInitialPosition(){
-        transform.position = initialPosition;
+        club.MovePosition(initialPosition);
         club.velocity = Vector3.zero;
         club.angularVelocity = Vector3.zero;
     }
