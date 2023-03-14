@@ -113,10 +113,11 @@ public class BallController : MonoBehaviour, IGraspable
     private void OnCollisionEnter(Collision collision){
         // if ball fall out of bounds
         if (collision.collider.tag == "Out Of Bounds"){
-            BackToInitialPosition();
+            BackToLastPosition();
         }
         // if club collide with the ball
         if (collision.collider.tag == "Putt"){
+            lastPosition = ball.position;
             putts++;
             puttsCounter1.text = putts.ToString();
         }
@@ -124,6 +125,12 @@ public class BallController : MonoBehaviour, IGraspable
 
     private void BackToInitialPosition(){
         transform.position = initialPosition;
+        ball.velocity = Vector3.zero;
+        ball.angularVelocity = Vector3.zero;
+    }
+
+    private void BackToLastPosition(){
+        transform.position = lastPosition;
         ball.velocity = Vector3.zero;
         ball.angularVelocity = Vector3.zero;
     }
