@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 using Ubiq.XR;
-using UnityEngine;
 using Ubiq.Spawning;
 using Ubiq.Messaging;
 
