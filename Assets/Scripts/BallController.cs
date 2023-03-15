@@ -11,8 +11,7 @@ using Ubiq.Messaging;
 public class BallController : MonoBehaviour, IGraspable
 {
     public float minHoleTime;
-    public Text puttsCounter1;
-    public Text puttsCounter2;
+    public Text puttsCounter;
     public ClubController club;
 
     private Rigidbody ball;
@@ -32,7 +31,7 @@ public class BallController : MonoBehaviour, IGraspable
     void Awake(){
         ball = GetComponent<Rigidbody>();
         ball.maxAngularVelocity = 1000;
-        initialPosition = ball.position;        
+        initialPosition = ball.position;     
     }
 
     public void Grasp(Hand controller)
@@ -119,7 +118,7 @@ public class BallController : MonoBehaviour, IGraspable
         if (collision.collider.tag == "Putt"){
             lastPosition = ball.position;
             putts++;
-            puttsCounter1.text = putts.ToString();
+            puttsCounter.text = putts.ToString();
         }
     }
 
@@ -138,7 +137,7 @@ public class BallController : MonoBehaviour, IGraspable
     private void StartAnotherRound(){
         holeTime = 0;
         putts = 0;
-        puttsCounter1.text = putts.ToString();
+        puttsCounter.text = putts.ToString();
         BackToInitialPosition(); // move ball back
         club.BackToInitialPosition(); // move club back
     }
