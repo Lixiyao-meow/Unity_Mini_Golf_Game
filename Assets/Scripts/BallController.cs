@@ -17,8 +17,8 @@ public class BallController : MonoBehaviour, IGraspable
     private Rigidbody ball;
     private Hand follow;
     private float puttCoolDown = 1.0f;
-    private lastPuttTime = 0.0f;
-    private int putts;
+    private float lastPuttTime = 0.0f;
+    private int putts = -1;
     private float holeTime;
     private Vector3 lastPosition; // get ball back when out of bounce
     private Vector3 initialPosition; // put ball back after one round
