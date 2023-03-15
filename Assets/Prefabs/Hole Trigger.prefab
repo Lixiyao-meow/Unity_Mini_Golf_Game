@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1859703309275396388}
   m_Layer: 0
   m_Name: Hole Trigger
-  m_TagString: Hole
+  m_TagString: Teleport
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

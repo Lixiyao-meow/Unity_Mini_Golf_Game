@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 987262752911841416}
   m_Layer: 0
   m_Name: crop_turnip
-  m_TagString: Untagged
+  m_TagString: Teleport
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

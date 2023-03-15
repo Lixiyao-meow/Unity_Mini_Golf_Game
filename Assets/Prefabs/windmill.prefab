@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: -4199602239684941769}
   m_Layer: 0
   m_Name: windmill
-  m_TagString: Untagged
+  m_TagString: Teleport
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6915075807319751167}
   m_Layer: 0
   m_Name: crop_pumpkin
-  m_TagString: Untagged
+  m_TagString: Teleport
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
