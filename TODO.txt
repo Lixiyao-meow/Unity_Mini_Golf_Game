@@ -2,9 +2,7 @@
 
 - Q: VR click of inventory
 - Q: Networking for spawning
-- Q: Teleport avatar
 
-- Minor Q: referential change not work for joystick
 - How to get a list of avatars that are in the room
 - How to get the names of the avatars
 - Change between scenes (original, snapping)

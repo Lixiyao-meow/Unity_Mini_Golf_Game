@@ -213,6 +213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: side
       objectReference: {fileID: 0}
+    - target: {fileID: 7245774951484288804, guid: 0e37d61b460804b5a98e29dcbaaa8c77, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 8054117566778750366, guid: 0e37d61b460804b5a98e29dcbaaa8c77, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -281,6 +285,10 @@ PrefabInstance:
     - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_Name
       value: roundCornerC (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
@@ -394,6 +402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hillSquare (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7580453025546578433, guid: 7b4ae3d4676fa458caee82cb93c7c7e6, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5648933332406016042, guid: 7b4ae3d4676fa458caee82cb93c7c7e6, type: 3}
     - {fileID: 7371232642373324692, guid: 7b4ae3d4676fa458caee82cb93c7c7e6, type: 3}
@@ -413,6 +425,10 @@ PrefabInstance:
     - target: {fileID: 8210253224460405882, guid: 69626e653782a458f878d4df3bd6e6ad, type: 3}
       propertyPath: m_Name
       value: open (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210253224460405882, guid: 69626e653782a458f878d4df3bd6e6ad, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 8843800154563122880, guid: 69626e653782a458f878d4df3bd6e6ad, type: 3}
       propertyPath: m_RootOrder
@@ -544,6 +560,10 @@ PrefabInstance:
     - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_Name
       value: roundCornerC (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
@@ -853,6 +873,10 @@ PrefabInstance:
     - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_Name
       value: roundCornerC (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
@@ -1408,6 +1432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roundCornerC (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -1621,6 +1649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roundCornerC
       objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1732,6 +1764,10 @@ PrefabInstance:
     - target: {fileID: 2085288721402842469, guid: 1c6a14daf94ac46d4aaf43f2526efdf1, type: 3}
       propertyPath: m_Name
       value: splitT (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085288721402842469, guid: 1c6a14daf94ac46d4aaf43f2526efdf1, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -2186331435682352790, guid: 1c6a14daf94ac46d4aaf43f2526efdf1, type: 3}
@@ -1976,6 +2012,10 @@ PrefabInstance:
     - target: {fileID: 5577836149352464733, guid: 2f125a5a775bf46bca1c0d6afa1a304f, type: 3}
       propertyPath: m_Name
       value: rampB
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577836149352464733, guid: 2f125a5a775bf46bca1c0d6afa1a304f, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1209790890924519219, guid: 2f125a5a775bf46bca1c0d6afa1a304f, type: 3}
@@ -2329,6 +2369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roundCornerC (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -2437,6 +2481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rampB (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5577836149352464733, guid: 2f125a5a775bf46bca1c0d6afa1a304f, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1209790890924519219, guid: 2f125a5a775bf46bca1c0d6afa1a304f, type: 3}
     - {fileID: -6201771026089406257, guid: 2f125a5a775bf46bca1c0d6afa1a304f, type: 3}
@@ -2461,6 +2509,10 @@ PrefabInstance:
     - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_Name
       value: roundCornerC
+      objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
@@ -2593,6 +2645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: supports_bottom
       objectReference: {fileID: 0}
+    - target: {fileID: 6063274731187024150, guid: 88b47d9d507094418b3d808c88b690d0, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 6876649815786220460, guid: 88b47d9d507094418b3d808c88b690d0, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -2654,6 +2710,10 @@ PrefabInstance:
     - target: {fileID: 8495392063284930178, guid: 88d092716d9744a528fc2094ac76ac0b, type: 3}
       propertyPath: m_Name
       value: narrowSquare
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495392063284930178, guid: 88d092716d9744a528fc2094ac76ac0b, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 9128342065954241592, guid: 88d092716d9744a528fc2094ac76ac0b, type: 3}
       propertyPath: m_RootOrder
@@ -2791,6 +2851,10 @@ PrefabInstance:
     - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_Name
       value: roundCornerC
+      objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
@@ -3044,6 +3108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roundCornerC (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -3245,6 +3313,10 @@ PrefabInstance:
     - target: {fileID: 6973629072831296164, guid: d062c7fb0c7304acda9fe6bae8310ccc, type: 3}
       propertyPath: m_Name
       value: splitStart1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6973629072831296164, guid: d062c7fb0c7304acda9fe6bae8310ccc, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 7749742907191617566, guid: d062c7fb0c7304acda9fe6bae8310ccc, type: 3}
       propertyPath: m_RootOrder
@@ -3908,6 +3980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: splitStart2
       objectReference: {fileID: 0}
+    - target: {fileID: 6973629072831296164, guid: d062c7fb0c7304acda9fe6bae8310ccc, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 7749742907191617566, guid: d062c7fb0c7304acda9fe6bae8310ccc, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -4072,6 +4148,10 @@ PrefabInstance:
     - target: {fileID: 8936531683670292479, guid: 67ef890fe14c84f52ab0fd8bda48216e, type: 3}
       propertyPath: m_Name
       value: gap
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936531683670292479, guid: 67ef890fe14c84f52ab0fd8bda48216e, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -6185997773789465368, guid: 67ef890fe14c84f52ab0fd8bda48216e, type: 3}
@@ -4300,6 +4380,10 @@ PrefabInstance:
     - target: {fileID: 4132420528666469468, guid: 4c86f71a5bbae4f759c4470826bf2abd, type: 3}
       propertyPath: m_Name
       value: windmill
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132420528666469468, guid: 4c86f71a5bbae4f759c4470826bf2abd, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8025729682754163407, guid: 4c86f71a5bbae4f759c4470826bf2abd, type: 3}
@@ -4636,6 +4720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: straight (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8080533305732766129, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 8892360308473611019, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -4747,6 +4835,10 @@ PrefabInstance:
     - target: {fileID: 2085288721402842469, guid: 1c6a14daf94ac46d4aaf43f2526efdf1, type: 3}
       propertyPath: m_Name
       value: splitT
+      objectReference: {fileID: 0}
+    - target: {fileID: 2085288721402842469, guid: 1c6a14daf94ac46d4aaf43f2526efdf1, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -2186331435682352790, guid: 1c6a14daf94ac46d4aaf43f2526efdf1, type: 3}
@@ -4886,6 +4978,10 @@ PrefabInstance:
     - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_Name
       value: roundCornerC (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
@@ -5299,6 +5395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: obstacleBlock
       objectReference: {fileID: 0}
+    - target: {fileID: 8855623004750808884, guid: b91ff6cc7cbc14755ae6f6b549688770, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -198739816296123007, guid: b91ff6cc7cbc14755ae6f6b549688770, type: 3}
     - {fileID: -24825812696118578, guid: b91ff6cc7cbc14755ae6f6b549688770, type: 3}
@@ -5375,6 +5475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: supports_bottom (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 43fa7df34a24e40d492600d0a9dce36b, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43fa7df34a24e40d492600d0a9dce36b, type: 3}
 --- !u!4 &1241161855 stripped
@@ -5396,6 +5500,10 @@ PrefabInstance:
     - target: {fileID: 8080533305732766129, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
       propertyPath: m_Name
       value: straight
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080533305732766129, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 8892360308473611019, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
       propertyPath: m_RootOrder
@@ -5697,6 +5805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: holeOpen
       objectReference: {fileID: 0}
+    - target: {fileID: 8532723361596655268, guid: 2ad6567c59b344662b236fb32a7e3026, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 9016630989972380702, guid: 2ad6567c59b344662b236fb32a7e3026, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -5760,6 +5872,10 @@ PrefabInstance:
     - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_Name
       value: roundCornerC (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
@@ -5891,6 +6007,10 @@ PrefabInstance:
     - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_Name
       value: roundCornerC (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
@@ -6324,6 +6444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: open
       objectReference: {fileID: 0}
+    - target: {fileID: 8210253224460405882, guid: 69626e653782a458f878d4df3bd6e6ad, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 8843800154563122880, guid: 69626e653782a458f878d4df3bd6e6ad, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -6608,6 +6732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hillRound
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9e6d719489802466db0d21c26d5dbe32, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e6d719489802466db0d21c26d5dbe32, type: 3}
 --- !u!4 &1486830610 stripped
@@ -6689,6 +6817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: open (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 928d723ee104a44aaa21283815c5f1b7, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 928d723ee104a44aaa21283815c5f1b7, type: 3}
 --- !u!4 &1506686864 stripped
@@ -6730,6 +6862,10 @@ PrefabInstance:
     - target: {fileID: 8080533305732766129, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
       propertyPath: m_Name
       value: straight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080533305732766129, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 8892360308473611019, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
       propertyPath: m_RootOrder
@@ -7314,6 +7450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: roundCornerC
       objectReference: {fileID: 0}
+    - target: {fileID: 337864652649906068, guid: 789600b4ffb0246afb94314469312895, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 1151662220496332078, guid: 789600b4ffb0246afb94314469312895, type: 3}
       propertyPath: m_RootOrder
       value: 40
@@ -7572,6 +7712,10 @@ PrefabInstance:
     - target: {fileID: 7119364230806156932, guid: 6a0f90229fff444ff835106b63cbcedd, type: 3}
       propertyPath: m_Name
       value: castle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7119364230806156932, guid: 6a0f90229fff444ff835106b63cbcedd, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 7603976817936100414, guid: 6a0f90229fff444ff835106b63cbcedd, type: 3}
       propertyPath: m_RootOrder
@@ -7966,6 +8110,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: open (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 928d723ee104a44aaa21283815c5f1b7, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 928d723ee104a44aaa21283815c5f1b7, type: 3}
 --- !u!4 &1810669808 stripped
@@ -8195,7 +8343,7 @@ GameObject:
   - component: {fileID: 1853859727}
   m_Layer: 0
   m_Name: Course
-  m_TagString: Untagged
+  m_TagString: Teleport
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8302,6 +8450,10 @@ PrefabInstance:
     - target: {fileID: 8210253224460405882, guid: 69626e653782a458f878d4df3bd6e6ad, type: 3}
       propertyPath: m_Name
       value: open (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210253224460405882, guid: 69626e653782a458f878d4df3bd6e6ad, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 8843800154563122880, guid: 69626e653782a458f878d4df3bd6e6ad, type: 3}
       propertyPath: m_RootOrder
@@ -8504,6 +8656,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: side
       objectReference: {fileID: 0}
+    - target: {fileID: 7245774951484288804, guid: 0e37d61b460804b5a98e29dcbaaa8c77, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 8054117566778750366, guid: 0e37d61b460804b5a98e29dcbaaa8c77, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -8620,6 +8776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: hillSquare
       objectReference: {fileID: 0}
+    - target: {fileID: 6394540059432578456, guid: 97dafb5c8703344eeb83ada6aea262df, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1304207143274695342, guid: 97dafb5c8703344eeb83ada6aea262df, type: 3}
     - {fileID: -4101547177888283444, guid: 97dafb5c8703344eeb83ada6aea262df, type: 3}
@@ -8649,6 +8809,10 @@ PrefabInstance:
     - target: {fileID: 3628739856719526931, guid: 9c2365b47ae354bb1ad3616881b1d99d, type: 3}
       propertyPath: m_Name
       value: end
+      objectReference: {fileID: 0}
+    - target: {fileID: 3628739856719526931, guid: 9c2365b47ae354bb1ad3616881b1d99d, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 4111802956299495081, guid: 9c2365b47ae354bb1ad3616881b1d99d, type: 3}
       propertyPath: m_RootOrder
@@ -8791,6 +8955,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: open (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8210253224460405882, guid: 69626e653782a458f878d4df3bd6e6ad, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 8843800154563122880, guid: 69626e653782a458f878d4df3bd6e6ad, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -8854,6 +9022,10 @@ PrefabInstance:
     - target: {fileID: 8080533305732766129, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
       propertyPath: m_Name
       value: straight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8080533305732766129, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 8892360308473611019, guid: 674c4e3f137ff4e25897f89327d19769, type: 3}
       propertyPath: m_RootOrder
@@ -8923,6 +9095,10 @@ PrefabInstance:
     - target: {fileID: 7245774951484288804, guid: 0e37d61b460804b5a98e29dcbaaa8c77, type: 3}
       propertyPath: m_Name
       value: side (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245774951484288804, guid: 0e37d61b460804b5a98e29dcbaaa8c77, type: 3}
+      propertyPath: m_TagString
+      value: Teleport
       objectReference: {fileID: 0}
     - target: {fileID: 8054117566778750366, guid: 0e37d61b460804b5a98e29dcbaaa8c77, type: 3}
       propertyPath: m_RootOrder

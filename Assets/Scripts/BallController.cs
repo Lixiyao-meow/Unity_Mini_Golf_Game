@@ -138,6 +138,7 @@ public class BallController : MonoBehaviour, IGraspable
     private void StartAnotherRound(){
         holeTime = 0;
         putts = 0;
+        puttsCounter1.text = putts.ToString();
         BackToInitialPosition(); // move ball back
         club.BackToInitialPosition(); // move club back
     }
