@@ -16,6 +16,8 @@ public class BallController : MonoBehaviour, IGraspable
 
     private Rigidbody ball;
     private Hand follow;
+    private float puttCoolDown = 1.0f;
+    private lastPuttTime = 0.0f;
     private int putts;
     private float holeTime;
     private Vector3 lastPosition; // get ball back when out of bounce
@@ -116,9 +118,12 @@ public class BallController : MonoBehaviour, IGraspable
         }
         // if club collide with the ball
         if (collision.collider.tag == "Putt"){
-            lastPosition = ball.position;
-            putts++;
-            puttsCounter.text = putts.ToString();
+            if (Time.time > lastPuttTime + puttCoolDown){
+                lastPuttTime = Time.time;
+                lastPosition = ball.position;
+                putts++;
+                puttsCounter.text = putts.ToString();
+            }
         }
     }
 
