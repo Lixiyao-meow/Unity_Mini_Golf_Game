@@ -8,6 +8,6 @@ public class Spawner : MonoBehaviour
 
     public void Spawn(GameObject item)
     {
-        Instantiate(item, new Vector3(-4, 0, 3), Quaternion.identity);
+        Instantiate(item, new Vector3(0, 0, 0), Quaternion.identity);
     }
 }

@@ -1,8 +1,5 @@
-- Condition to only hit the ball at their turn
+- Add Teleport Tag to ground
+- Add second scene into the main scene
+- Fix gravity
 
-- Q: VR click of inventory
 - Q: Networking for spawning
-
-- How to get a list of avatars that are in the room
-- How to get the names of the avatars
-- Change between scenes (original, snapping)
