@@ -8,15 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MinigolfUbiq.unity
     guid: 292dfb502f1f246cbae9a86df3469fe7
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 76123612a4081481785033063d2f62f7, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: fc008002e4f0b43828ab53f3e857fe03, type: 2}

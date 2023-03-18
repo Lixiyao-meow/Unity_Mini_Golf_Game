@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour
 
     public void Spawn(GameObject item)
     {
-        Instantiate(item, new Vector3(0, 0, 0), Quaternion.identity);
+        var obj = (GameObject)Instantiate(item, new Vector3(0, 0, 0), Quaternion.identity);
+        obj.AddComponent<GraspBehaviour>();
     }
 }

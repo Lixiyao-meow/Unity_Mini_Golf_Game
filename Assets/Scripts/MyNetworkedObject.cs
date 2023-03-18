@@ -5,12 +5,11 @@ using Ubiq.Messaging;
 using Ubiq.Spawning;
 using Ubiq.XR;
 
-public class MyNetworkedObject : MonoBehaviour, IGraspable
+public class MyNetworkedObject : MonoBehaviour
 {
 
     public NetworkId NetworkId { get; set; }
     private bool owner;
-    private Hand controller;
     Vector3 lastPosition;
     NetworkContext context;
 
@@ -45,25 +44,5 @@ public class MyNetworkedObject : MonoBehaviour, IGraspable
             // 4. Send transform update messages if we are the current 'owner'
             context.SendJson(new Message(transform));
         }
-    }
-
-    private void LateUpdate() {
-        if (controller)
-        {
-            transform.position = controller.transform.position;
-            // transform.rotation = controller.transform.rotation;
-        }
-    }
-
-    void IGraspable.Grasp(Hand controller)
-    {
-        owner = true;
-        this.controller = controller;
-    }
-
-    void IGraspable.Release(Hand controller)
-    {
-        owner = false;
-        this.controller = null;
     }
 }

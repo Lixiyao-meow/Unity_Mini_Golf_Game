@@ -6,11 +6,10 @@ using UnityEngine;
 using Ubiq.Spawning;
 using Ubiq.Messaging;
 
-public class ClubController : Grabable, IGraspable
+public class ClubController : GraspBehaviour
 {
     public Transform visual;
     private Quaternion relativeRotation;
-    // private Vector3 relativePosition;
     
     private Hand follow;
     private Rigidbody club;
@@ -26,30 +25,21 @@ public class ClubController : Grabable, IGraspable
 
     private void Awake()
     {
+        base.Awake();
         club = GetComponent<Rigidbody>();
         initialPosition = club.position;
     }
 
     public void Grasp(Hand controller)
     {
-        follow = controller;
-        club.isKinematic = true;
         // Vector (A -> B) => (B - A)
-        relativeRotation =  transform.rotation;
         Vector3 relativePosition = transform.position - controller.transform.position;
         visual.position += relativePosition;
-
-    }
-
-    public void Release(Hand controller)
-    {
-        follow = null;
-        club.isKinematic = false;
-        club.velocity = controller.velocity; // Set the club's velocity to the VR hand
     }
 
     private void Update()
     {
+        base.Update();
         if(lastPosition != transform.localPosition)
         {
             lastPosition = transform.localPosition;
@@ -57,12 +47,6 @@ public class ClubController : Grabable, IGraspable
             {
                 position = transform.localPosition
             });
-        }
-
-        if (follow != null)
-        {
-            club.MovePosition(follow.transform.position);
-            club.MoveRotation(follow.transform.rotation);
         }
     }
 

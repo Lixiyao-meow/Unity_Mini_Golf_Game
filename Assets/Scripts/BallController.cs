@@ -7,7 +7,7 @@ using Ubiq.XR;
 using Ubiq.Spawning;
 using Ubiq.Messaging;
 
-public class BallController : MonoBehaviour, IGraspable
+public class BallController : GraspBehaviour
 {
     public float minHoleTime;
     public Text puttsCounter;
@@ -30,27 +30,16 @@ public class BallController : MonoBehaviour, IGraspable
     }
 
     void Awake(){
+        base.Awake();
         ball = GetComponent<Rigidbody>();
         ball.maxAngularVelocity = 1000;
         initialPosition = ball.position;
         lastPosition = ball.position;   
     }
 
-    public void Grasp(Hand controller)
-    {
-        follow = controller;
-        ball.isKinematic = true;
-    }
-
-    public void Release(Hand controller)
-    {
-        follow = null;
-        ball.isKinematic = false;
-        ball.velocity = controller.velocity;
-    }
-
     private void Update()
     {
+        base.Update();
         if (lastNetworkedPosition != transform.localPosition)
         {
             lastNetworkedPosition = transform.localPosition;
@@ -58,13 +47,6 @@ public class BallController : MonoBehaviour, IGraspable
             {
                 position = transform.localPosition
             });
-        }
-        if (follow != null)
-        {
-            ball.MovePosition(follow.transform.position);
-            ball.MoveRotation(follow.transform.rotation);
-            // transform.position = follow.transform.position;
-            // transform.rotation = follow.transform.rotation;
         }
     }
 
@@ -145,7 +127,7 @@ public class BallController : MonoBehaviour, IGraspable
     private void StartAnotherRound(){
         holeTime = 0;
         putts = 0;
-        puttsCounter.text = putts.ToString();
+        // puttsCounter.text = putts.ToString();
         BackToInitialPosition(); // move ball back
         club.BackToInitialPosition(); // move club back
     }
