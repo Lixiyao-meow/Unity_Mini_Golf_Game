@@ -16,9 +16,11 @@ public class MyNetworkedObject : MonoBehaviour
     private struct Message
     {
         public Vector3 position;
+        public Quaternion rotation;
 
         public Message(Transform transform) {
             this.position = transform.position;
+            this.rotation = transform.rotation;
         }
     }
 
@@ -33,6 +35,7 @@ public class MyNetworkedObject : MonoBehaviour
         var data = message.FromJson<Message>();
 
         transform.position = data.position;
+        transform.rotation = data.rotation;
 
         lastPosition = transform.position;
     }
