@@ -9,8 +9,8 @@ public class MyNetworkedObject : MonoBehaviour
 {
 
     public NetworkId NetworkId { get; set; }
-    private bool owner;
     Vector3 lastPosition;
+    Quaternion lastRotation;
     NetworkContext context;
 
     private struct Message
@@ -38,14 +38,14 @@ public class MyNetworkedObject : MonoBehaviour
         transform.rotation = data.rotation;
 
         lastPosition = transform.position;
+        lastRotation = transform.rotation;
     }
 
     private void FixedUpdate()
     {
-        if (owner)
-        {
-            // 4. Send transform update messages if we are the current 'owner'
-            context.SendJson(new Message(transform));
-        }
+        if (lastPosition == transform.position && lastRotation == transform.rotation) return;
+        
+        // 4. Send transform update messages if we are the current 'owner'
+        context.SendJson(new Message(transform));
     }
 }
