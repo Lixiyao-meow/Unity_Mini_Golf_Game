@@ -20,13 +20,10 @@ public class BallController : GraspBehaviour
     private int putts;
     private float holeTime;
     private Vector3 lastPosition; // get ball back when out of bounce
-    private Vector3 initialPosition; // put ball back after one round
-    NetworkContext context;
-    Vector3 lastNetworkedPosition;
+    private Vector3 initialPosition; // put ball back after one roundVector3 lastNetworkedPosition;
 
     void Start()
     {
-        context = NetworkScene.Register(this);
     }
 
     void Awake(){
@@ -40,31 +37,6 @@ public class BallController : GraspBehaviour
     private void Update()
     {
         base.Update();
-        if (lastNetworkedPosition != transform.localPosition)
-        {
-            lastNetworkedPosition = transform.localPosition;
-            context.SendJson(new Message()
-            {
-                position = transform.localPosition
-            });
-        }
-    }
-
-    private struct Message
-    {
-        public Vector3 position;
-    }
-
-    public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
-    {
-        // Parse the message
-        var m = message.FromJson<Message>();
-
-        // Use the message to update the Component
-        transform.localPosition = m.position;
-
-        // Make sure the logic in Update doesn't trigger as a result of this message
-        lastNetworkedPosition = transform.localPosition;
     }
 
     private void OnTriggerStay(Collider other){

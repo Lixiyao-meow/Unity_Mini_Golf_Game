@@ -14,13 +14,11 @@ public class ClubController : GraspBehaviour
     private Hand follow;
     private Rigidbody club;
     private Vector3 initialPosition;
-
-    NetworkContext context;
+    
     Vector3 lastPosition;
 
     void Start()
     {
-        context = NetworkScene.Register(this);
     }
 
     private void Awake()
@@ -40,31 +38,6 @@ public class ClubController : GraspBehaviour
     private void Update()
     {
         base.Update();
-        if(lastPosition != transform.localPosition)
-        {
-            lastPosition = transform.localPosition;
-            context.SendJson(new Message()
-            {
-                position = transform.localPosition
-            });
-        }
-    }
-
-    private struct Message
-    {
-        public Vector3 position;
-    }
-
-    public void ProcessMessage(ReferenceCountedSceneGraphMessage message)
-    {
-        // Parse the message
-        var m = message.FromJson<Message>();
-
-        // Use the message to update the Component
-        transform.localPosition = m.position;
-
-        // Make sure the logic in Update doesn't trigger as a result of this message
-        lastPosition = transform.localPosition;
     }
 
     public void BackToInitialPosition(){
