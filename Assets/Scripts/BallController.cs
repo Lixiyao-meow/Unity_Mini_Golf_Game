@@ -17,7 +17,7 @@ public class BallController : MonoBehaviour, IGraspable
     private Hand follow;
     private float puttCoolDown = 1.0f;
     private float lastPuttTime = 0.0f;
-    private int putts = -1;
+    private int putts;
     private float holeTime;
     private Vector3 lastPosition; // get ball back when out of bounce
     private Vector3 initialPosition; // put ball back after one round
@@ -32,7 +32,8 @@ public class BallController : MonoBehaviour, IGraspable
     void Awake(){
         ball = GetComponent<Rigidbody>();
         ball.maxAngularVelocity = 1000;
-        initialPosition = ball.position;     
+        initialPosition = ball.position;
+        lastPosition = ball.position;   
     }
 
     public void Grasp(Hand controller)
@@ -111,16 +112,19 @@ public class BallController : MonoBehaviour, IGraspable
     }
 
     private void OnCollisionEnter(Collision collision){
+        if(collision.impulse.magnitude <= Mathf.Epsilon) return;
+
         // if ball fall out of bounds
         if (collision.collider.tag == "Out Of Bounds"){
             BackToLastPosition();
         }
+
         // if club collide with the ball
         if (collision.collider.tag == "Putt"){
             if (Time.time > lastPuttTime + puttCoolDown){
+                putts++;
                 lastPuttTime = Time.time;
                 lastPosition = ball.position;
-                putts++;
                 puttsCounter.text = putts.ToString();
             }
         }

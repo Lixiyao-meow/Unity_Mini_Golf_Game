@@ -6,11 +6,11 @@ using UnityEngine;
 using Ubiq.Spawning;
 using Ubiq.Messaging;
 
-public class ClubController : MonoBehaviour, IGraspable
+public class ClubController : Grabable, IGraspable
 {
-    public GameObject ClubPrefab;
-
+    public Transform visual;
     private Quaternion relativeRotation;
+    // private Vector3 relativePosition;
     
     private Hand follow;
     private Rigidbody club;
@@ -36,6 +36,9 @@ public class ClubController : MonoBehaviour, IGraspable
         club.isKinematic = true;
         // Vector (A -> B) => (B - A)
         relativeRotation =  transform.rotation;
+        Vector3 relativePosition = transform.position - controller.transform.position;
+        visual.position += relativePosition;
+
     }
 
     public void Release(Hand controller)
@@ -84,5 +87,6 @@ public class ClubController : MonoBehaviour, IGraspable
         club.MovePosition(initialPosition);
         club.velocity = Vector3.zero;
         club.angularVelocity = Vector3.zero;
+        club.isKinematic = true;
     }
 }
