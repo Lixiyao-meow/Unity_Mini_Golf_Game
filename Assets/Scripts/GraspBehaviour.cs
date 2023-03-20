@@ -37,14 +37,6 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
         transform.rotation = data.rotation;
     }
 
-    private void FixedUpdate()
-    {
-        if (owner)
-        {
-            context.SendJson(new Message(transform));
-        }
-    }
-
     internal void setOwner()
     {
         owner = true;
@@ -65,15 +57,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
         ball.removeOwner();
     }
 
-    private void LateUpdate()
-    {
-        if (hand)
-        {
-            transform.position = hand.transform.position;
-            transform.rotation = hand.transform.rotation;
-        }
-    }
-
+    
     public void Grasp(Hand controller)
     {
         hand = controller;
@@ -100,6 +84,11 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     // Update is called once per frame
     internal void Update()
     {
+        if (owner)
+        {
+            context.SendJson(new Message(transform));
+        }
+
         if (hand == null) return;
 
         body.MovePosition(hand.transform.position);
