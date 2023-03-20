@@ -8457,6 +8457,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5f8b847e90fd74b51be8a020fb3e3c44, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5f8b847e90fd74b51be8a020fb3e3c44, type: 3}
       propertyPath: m_Name
       value: Ball
@@ -9523,7 +9527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eddd711509da4650bdf0f5d203ee74d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visual: {fileID: 3469287837527481668}
+  visual: {fileID: 0}
+  myBall: {fileID: 1846895905}
 --- !u!4 &2112134701
 Transform:
   m_ObjectHideFlags: 0
@@ -10128,15 +10133,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4945016494432309368, guid: 10f6e0181b2fa49418b852fd1915302c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4945016494432309368, guid: 10f6e0181b2fa49418b852fd1915302c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4945016494432309368, guid: 10f6e0181b2fa49418b852fd1915302c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4945016494432309368, guid: 10f6e0181b2fa49418b852fd1915302c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y

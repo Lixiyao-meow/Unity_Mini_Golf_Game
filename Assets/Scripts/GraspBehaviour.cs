@@ -11,7 +11,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     private Hand hand;
     private Rigidbody body;
     private NetworkContext context; // new
-    private bool owner; // new
+    private bool owner = false; // new
 
     private struct Message
     {
@@ -79,6 +79,17 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
         context = NetworkScene.Register(this);
         Debug.Log("GraspBehaviour is awake!");
         body = GetComponent<Rigidbody>();
+    }
+
+    internal void UpdateOwnership(BallController ball)
+    {
+        if (owner)
+        {
+            ball.setOwner();
+        } else
+        {
+            ball.removeOwner();
+        }
     }
 
     // Update is called once per frame
