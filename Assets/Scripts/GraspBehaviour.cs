@@ -92,6 +92,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     // Start is called before the first frame update
     internal void Awake()
     {
+        context = NetworkScene.Register(this);
         Debug.Log("GraspBehaviour is awake!");
         body = GetComponent<Rigidbody>();
     }
