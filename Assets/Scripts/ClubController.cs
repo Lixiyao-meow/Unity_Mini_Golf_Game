@@ -14,6 +14,7 @@ public class ClubController : GraspBehaviour
     private Hand follow;
     private Rigidbody club;
     private Vector3 initialPosition;
+    public BallController myBall;
     
     Vector3 lastPosition;
 
@@ -33,6 +34,12 @@ public class ClubController : GraspBehaviour
         // Vector (A -> B) => (B - A)
         Vector3 relativePosition = transform.position - controller.transform.position;
         visual.position += relativePosition;
+        base.setBallOwner(myBall);
+    }
+
+    public void Release(Hand controller)
+    {
+        base.removeBallOwner(myBall);
     }
 
     private void Update()
