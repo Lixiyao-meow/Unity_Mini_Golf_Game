@@ -38,16 +38,12 @@ public class ClubController : GraspBehaviour
         //base.setBallOwner(myBall);
     }
 
-    public void Release(Hand controller)
-    {
-        //base.removeBallOwner(myBall);
-    }
 
     private void Update()
     {
         Debug.Log("Entering club update XDXDXDXDXDXDXDXDXDXD");
-        base.Update();
         base.UpdateOwnership(myBall);
+        base.Update();
     }
 
     public void BackToInitialPosition(){

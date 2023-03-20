@@ -32,6 +32,8 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage msg)
     {
+        Debug.Log("!!!! LOST OWNERSHIP!!!!!!!!");
+        owner = false;
         var data = msg.FromJson<Message>();
         transform.position = data.position;
         transform.rotation = data.rotation;
@@ -62,15 +64,18 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     {
         hand = controller;
         body.isKinematic = true;
+        context.SendJson(new Message(transform));
         owner = true;
+        Debug.Log("!!!! GAINED OWNERSHIP!!!!!!!!");
     }
 
     public void Release(Hand controller)
     {
+        Debug.Log("(((((((((((((((((((((()))))))))))))))))))))))))))");
         hand = null;
         body.isKinematic = false;
         body.velocity = controller.velocity;
-        owner = false;
+        //owner = false;
     }
     
     // Start is called before the first frame update
@@ -83,6 +88,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
 
     internal void UpdateOwnership(BallController ball)
     {
+        Debug.Log("______________________IN HERE _____________________", ball);
         if (owner)
         {
             ball.setOwner();
