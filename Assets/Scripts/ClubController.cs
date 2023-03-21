@@ -39,11 +39,10 @@ public class ClubController : GraspBehaviour
     }
 
 
-    private void Update()
+    private void LateUpdate()
     {
-        Debug.Log("Entering club update XDXDXDXDXDXDXDXDXDXD");
         base.UpdateOwnership(myBall);
-        base.Update();
+        base.LateUpdate();
     }
 
     public void BackToInitialPosition(){

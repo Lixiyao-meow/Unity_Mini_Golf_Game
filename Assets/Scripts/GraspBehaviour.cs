@@ -12,6 +12,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     private Rigidbody body;
     private NetworkContext context; // new
     private bool owner = false; // new
+    private bool lastBallOwner = false;
 
     private struct Message
     {
@@ -32,7 +33,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage msg)
     {
-        Debug.Log("!!!! LOST OWNERSHIP!!!!!!!!");
+        Debug.Log("!!!! LOST OWNERSHIP!!!!!!! " + gameObject.name);
         owner = false;
         var data = msg.FromJson<Message>();
         transform.position = data.position;
@@ -63,15 +64,19 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     public void Grasp(Hand controller)
     {
         hand = controller;
+        if (!owner)
+        {
+            Debug.Log("Message sent from grasp change owner");
+            context.SendJson(new Message(transform));
+        }
         body.isKinematic = true;
-        context.SendJson(new Message(transform));
         owner = true;
-        Debug.Log("!!!! GAINED OWNERSHIP!!!!!!!!");
+        Debug.Log("!!!! GAINED OWNERSHIP!!!!!!!! " + gameObject.name);
     }
 
     public void Release(Hand controller)
     {
-        Debug.Log("(((((((((((((((((((((()))))))))))))))))))))))))))");
+        Debug.Log("RELEASED");
         hand = null;
         body.isKinematic = false;
         body.velocity = controller.velocity;
@@ -88,7 +93,8 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
 
     internal void UpdateOwnership(BallController ball)
     {
-        Debug.Log("______________________IN HERE _____________________", ball);
+        if (owner == lastBallOwner) return;
+        lastBallOwner = owner;
         if (owner)
         {
             ball.setOwner();
@@ -99,16 +105,22 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     }
 
     // Update is called once per frame
-    internal void Update()
+    internal void LateUpdate()
+    {
+
+        if (hand)
+        {
+            transform.position = hand.transform.position;
+            transform.rotation = hand.transform.rotation;
+        }
+    }
+
+    private void FixedUpdate()
     {
         if (owner)
         {
+            Debug.Log("I AM THE OWNER " + gameObject.name);
             context.SendJson(new Message(transform));
         }
-
-        if (hand == null) return;
-
-        body.MovePosition(hand.transform.position);
-        body.MoveRotation(hand.transform.rotation);
     }
 }
