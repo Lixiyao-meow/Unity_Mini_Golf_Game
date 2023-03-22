@@ -35,8 +35,6 @@ public class ClubController : GraspBehaviour
         // Vector (A -> B) => (B - A)
         Vector3 relativePosition = transform.position - controller.transform.position;
         visual.position += relativePosition;
-        Debug.Log("ahahahaha");
-        //base.setBallOwner(myBall);
     }
 
     public override void Release(Hand controller)
@@ -47,7 +45,6 @@ public class ClubController : GraspBehaviour
 
     internal override void Update()
     {
-        Debug.Log("Entering club update XDXDXDXDXDXDXDXDXDXD");
         base.UpdateOwnership(myBall);
         base.Update();
     }

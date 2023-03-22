@@ -30,6 +30,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     private void Start()
     {
         context = NetworkScene.Register(this);
+        body = GetComponent<Rigidbody>();
     }
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage msg)
@@ -37,10 +38,9 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
         float currentTime = Time.time;
         if (currentTime - lastTime < 2f)
         {
-            Debug.Log("Less than 2 seconds have passed since last time");
+            //Debug.Log("Less than 2 seconds have passed since last time");
             return;
         }
-        Debug.Log("!!!! LOST OWNERSHIP!!!!!!!!");
         owner = false;
         var data = msg.FromJson<Message>();
         transform.position = data.position;
@@ -74,24 +74,20 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
         body.isKinematic = true;
         context.SendJson(new Message(transform));
         owner = true;
-        Debug.Log("!!!! GAINED OWNERSHIP!!!!!!!!");
         lastTime = Time.time;
     }
 
     public virtual void Release(Hand controller)
     {
-        Debug.Log("(((((((((((((((((((((()))))))))))))))))))))))))))");
         hand = null;
         body.isKinematic = false;
         body.velocity = controller.velocity;
-        //owner = false;
     }
     
     // Start is called before the first frame update
     internal virtual void Awake()
     {
         context = NetworkScene.Register(this);
-        Debug.Log("GraspBehaviour is awake!");
         body = GetComponent<Rigidbody>();
     }
 
@@ -100,7 +96,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
         float currentTime = Time.time;
         if (currentTime - lastTimeBall < 2f)
         {
-            Debug.Log("Less than 2 seconds have passed since last time for the ball");
+            //Debug.Log("Less than 2 seconds have passed since last time for the ball");
             return;
         }
         lastTimeBall = currentTime;
