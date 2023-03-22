@@ -12,7 +12,8 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     private Rigidbody body;
     private NetworkContext context; // new
     private bool owner = false; // new
-    private bool lastBallOwner = false;
+    float lastTime;
+    float lastTimeBall;
 
     private struct Message
     {
@@ -33,7 +34,13 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage msg)
     {
-        Debug.Log("!!!! LOST OWNERSHIP!!!!!!! " + gameObject.name);
+        float currentTime = Time.time;
+        if (currentTime - lastTime < 2f)
+        {
+            Debug.Log("Less than 2 seconds have passed since last time");
+            return;
+        }
+        Debug.Log("!!!! LOST OWNERSHIP!!!!!!!!");
         owner = false;
         var data = msg.FromJson<Message>();
         transform.position = data.position;
@@ -64,19 +71,16 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     public void Grasp(Hand controller)
     {
         hand = controller;
-        if (!owner)
-        {
-            Debug.Log("Message sent from grasp change owner");
-            context.SendJson(new Message(transform));
-        }
         body.isKinematic = true;
+        context.SendJson(new Message(transform));
         owner = true;
-        Debug.Log("!!!! GAINED OWNERSHIP!!!!!!!! " + gameObject.name);
+        Debug.Log("!!!! GAINED OWNERSHIP!!!!!!!!");
+        lastTime = Time.time;
     }
 
     public void Release(Hand controller)
     {
-        Debug.Log("RELEASED");
+        Debug.Log("(((((((((((((((((((((()))))))))))))))))))))))))))");
         hand = null;
         body.isKinematic = false;
         body.velocity = controller.velocity;
@@ -93,8 +97,13 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
 
     internal void UpdateOwnership(BallController ball)
     {
-        if (owner == lastBallOwner) return;
-        lastBallOwner = owner;
+        float currentTime = Time.time;
+        if (currentTime - lastTimeBall < 2f)
+        {
+            Debug.Log("Less than 2 seconds have passed since last time for the ball");
+            return;
+        }
+        lastTimeBall = currentTime;
         if (owner)
         {
             ball.setOwner();
@@ -105,22 +114,16 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     }
 
     // Update is called once per frame
-    internal void LateUpdate()
-    {
-
-        if (hand)
-        {
-            transform.position = hand.transform.position;
-            transform.rotation = hand.transform.rotation;
-        }
-    }
-
-    private void FixedUpdate()
+    internal void Update()
     {
         if (owner)
         {
-            Debug.Log("I AM THE OWNER " + gameObject.name);
             context.SendJson(new Message(transform));
         }
+
+        if (hand == null) return;
+
+        body.MovePosition(hand.transform.position);
+        body.MoveRotation(hand.transform.rotation);
     }
 }

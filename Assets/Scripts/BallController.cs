@@ -34,9 +34,9 @@ public class BallController : GraspBehaviour
         lastPosition = ball.position;   
     }
 
-    private void LateUpdate()
+    private void Update()
     {
-        base.LateUpdate();
+        base.Update();
     }
 
     private void OnTriggerStay(Collider other){
