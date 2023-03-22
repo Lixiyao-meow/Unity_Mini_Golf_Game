@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Ubiq.NetworkedBehaviour;
 
 public class ScoreBoard: MonoBehaviour
 {
     public Text puttsCounter;
-
     private int putts;
 
     public void AddPutt()
