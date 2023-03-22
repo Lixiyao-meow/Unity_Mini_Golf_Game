@@ -26,7 +26,7 @@ public class BallController : GraspBehaviour
     {
     }
 
-    void Awake(){
+    internal override void Awake(){
         base.Awake();
         ball = GetComponent<Rigidbody>();
         ball.maxAngularVelocity = 1000;
@@ -34,7 +34,7 @@ public class BallController : GraspBehaviour
         lastPosition = ball.position;   
     }
 
-    private void Update()
+    internal override void Update()
     {
         base.Update();
     }

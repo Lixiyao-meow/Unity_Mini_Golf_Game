@@ -68,7 +68,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     }
 
     
-    public void Grasp(Hand controller)
+    public virtual void Grasp(Hand controller)
     {
         hand = controller;
         body.isKinematic = true;
@@ -78,7 +78,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
         lastTime = Time.time;
     }
 
-    public void Release(Hand controller)
+    public virtual void Release(Hand controller)
     {
         Debug.Log("(((((((((((((((((((((()))))))))))))))))))))))))))");
         hand = null;
@@ -88,7 +88,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     }
     
     // Start is called before the first frame update
-    internal void Awake()
+    internal virtual void Awake()
     {
         context = NetworkScene.Register(this);
         Debug.Log("GraspBehaviour is awake!");
@@ -114,7 +114,7 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     }
 
     // Update is called once per frame
-    internal void Update()
+    internal virtual void Update()
     {
         if (owner)
         {

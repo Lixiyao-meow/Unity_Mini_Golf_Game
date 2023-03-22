@@ -22,15 +22,16 @@ public class ClubController : GraspBehaviour
     {
     }
 
-    private void Awake()
+    internal override void Awake()
     {
         base.Awake();
         club = GetComponent<Rigidbody>();
         initialPosition = club.position;
     }
 
-    public void Grasp(Hand controller)
+    public override void Grasp(Hand controller)
     {
+        base.Grasp(controller);
         // Vector (A -> B) => (B - A)
         Vector3 relativePosition = transform.position - controller.transform.position;
         visual.position += relativePosition;
@@ -38,8 +39,13 @@ public class ClubController : GraspBehaviour
         //base.setBallOwner(myBall);
     }
 
+    public override void Release(Hand controller)
+     {
+        base.Release(controller);
+     }
 
-    private void Update()
+
+    internal override void Update()
     {
         Debug.Log("Entering club update XDXDXDXDXDXDXDXDXDXD");
         base.UpdateOwnership(myBall);
