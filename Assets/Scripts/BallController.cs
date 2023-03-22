@@ -37,6 +37,11 @@ public class BallController : GraspBehaviour
     internal override void Update()
     {
         base.Update();
+        
+        // put ball back while ghost collision
+        if (ball.position.y < -1){
+            BackToLastPosition();
+        }
     }
 
     private void OnTriggerStay(Collider other){
@@ -88,6 +93,7 @@ public class BallController : GraspBehaviour
         transform.position = initialPosition;
         ball.velocity = Vector3.zero;
         ball.angularVelocity = Vector3.zero;
+        lastPosition = initialPosition;
     }
 
     private void BackToLastPosition(){
