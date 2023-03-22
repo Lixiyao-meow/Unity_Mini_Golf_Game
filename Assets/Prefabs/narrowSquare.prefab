@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 2481938508253862521}
   - component: {fileID: -6531060633213559455}
   - component: {fileID: 1149428949021173296}
-  - component: {fileID: -1223065426356279185}
   m_Layer: 0
   m_Name: narrowSquare
   m_TagString: Teleport
@@ -133,15 +132,3 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   snapDistance: 0.2
   notSnappable: 1
---- !u!114 &-1223065426356279185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8495392063284930178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c24bc5794a843e680ba721d26cce7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

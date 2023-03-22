@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8126070316137826995}
   - component: {fileID: 438294931406758743}
   - component: {fileID: 3175689310727112429}
-  - component: {fileID: 5003881756858048650}
   m_Layer: 0
   m_Name: gap
   m_TagString: Teleport
@@ -133,15 +132,3 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   snapDistance: 0.2
   notSnappable: 1
---- !u!114 &5003881756858048650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8936531683670292479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c24bc5794a843e680ba721d26cce7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -98,7 +98,6 @@ GameObject:
   - component: {fileID: 3861879846732781838}
   - component: {fileID: 4233843168740636237}
   - component: {fileID: -4199602239684941769}
-  - component: {fileID: -3079291521648494264}
   m_Layer: 0
   m_Name: windmill
   m_TagString: Teleport
@@ -219,15 +218,3 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   snapDistance: 0.2
   notSnappable: 1
---- !u!114 &-3079291521648494264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4132420528666469468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c24bc5794a843e680ba721d26cce7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

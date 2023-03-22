@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8541157070496105184}
   - component: {fileID: -1565349365418030001}
   - component: {fileID: 8496778427640130988}
-  - component: {fileID: 3075348999278440014}
   m_Layer: 0
   m_Name: splitStart
   m_TagString: Teleport
@@ -133,15 +132,3 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   snapDistance: 0.2
   notSnappable: 1
---- !u!114 &3075348999278440014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6973629072831296164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24c24bc5794a843e680ba721d26cce7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
