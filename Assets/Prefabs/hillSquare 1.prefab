@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4881062234917456973}
   - component: {fileID: 6087900895708106955}
   - component: {fileID: -7422020591349353996}
-  - component: {fileID: 1304207143274695342}
   - component: {fileID: -4101547177888283444}
+  - component: {fileID: 6081760873304018146}
   m_Layer: 0
   m_Name: hillSquare 1
   m_TagString: Teleport
@@ -118,18 +118,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1304207143274695342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6394540059432578456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd9f708b0749564282f8fd5aef34957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-4101547177888283444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,3 +133,15 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   snapDistance: 0.2
   notSnappable: 1
+--- !u!114 &6081760873304018146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6394540059432578456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c24bc5794a843e680ba721d26cce7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

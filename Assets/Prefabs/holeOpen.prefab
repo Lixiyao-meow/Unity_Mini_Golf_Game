@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 7884306238665320305}
   - component: {fileID: 8839223983634676727}
   - component: {fileID: -7899273738780017879}
-  - component: {fileID: -698372515954507368}
   - component: {fileID: 8790549884618917230}
+  - component: {fileID: -5431174376701614094}
   m_Layer: 0
   m_Name: holeOpen
   m_TagString: Teleport
@@ -119,18 +119,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-698372515954507368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8532723361596655268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd9f708b0749564282f8fd5aef34957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8790549884618917230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,3 +134,15 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   snapDistance: 0.2
   notSnappable: 1
+--- !u!114 &-5431174376701614094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8532723361596655268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c24bc5794a843e680ba721d26cce7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

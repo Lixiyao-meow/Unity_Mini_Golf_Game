@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3773954449794282045}
   - component: {fileID: 283757592586567064}
   - component: {fileID: 2599961609541634386}
-  - component: {fileID: 8519768973286469706}
   - component: {fileID: 6739916072133693340}
   - component: {fileID: -4676005942771244555}
   - component: {fileID: -6430526396497474375}
+  - component: {fileID: 8673510164657252551}
   m_Layer: 0
   m_Name: bumpDownWalls
   m_TagString: Teleport
@@ -88,18 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8519768973286469706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4545283484092885127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd9f708b0749564282f8fd5aef34957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &6739916072133693340
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -145,3 +133,15 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   snapDistance: 0.2
   notSnappable: 1
+--- !u!114 &8673510164657252551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545283484092885127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c24bc5794a843e680ba721d26cce7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

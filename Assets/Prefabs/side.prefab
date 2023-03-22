@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 9191518762196225777}
   - component: {fileID: 7516296931118273139}
   - component: {fileID: -3931414417115832691}
-  - component: {fileID: -4824622043400317031}
   - component: {fileID: -4132017563471994124}
+  - component: {fileID: 7133416180786501382}
   m_Layer: 0
   m_Name: side
   m_TagString: Teleport
@@ -118,18 +118,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-4824622043400317031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7245774951484288804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd9f708b0749564282f8fd5aef34957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-4132017563471994124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,3 +133,15 @@ MonoBehaviour:
   myCollider: {fileID: 0}
   snapDistance: 0.2
   notSnappable: 1
+--- !u!114 &7133416180786501382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7245774951484288804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c24bc5794a843e680ba721d26cce7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
