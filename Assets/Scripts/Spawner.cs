@@ -96,14 +96,28 @@ public class Spawner : MonoBehaviour
         {
             Debug.Log("Spawning " + m.item);
             var obj = (GameObject)Instantiate(ObjectFromId(m.item), new Vector3(0, 0, 0), Quaternion.identity);
-            obj.AddComponent<GraspBehaviour>();
+            if (m.item >= 10)
+            {
+                obj.AddComponent<PatchGraspBehaviour>();
+            }
+            else
+            {
+                obj.AddComponent<GraspBehaviour>();
+            }
         }
     }
 
     public void Spawn(int id)
     {
         var obj = (GameObject)Instantiate(ObjectFromId(id), new Vector3(0, 0, 0), Quaternion.identity);
-        obj.AddComponent<GraspBehaviour>();
+        if (id >= 10)
+        {
+            obj.AddComponent<PatchGraspBehaviour>();
+        }
+        else
+        {
+            obj.AddComponent<GraspBehaviour>();
+        }
 
         Debug.Log("Sending SPAWN MESSAGE! " + id);
         context.SendJson(new Message()
