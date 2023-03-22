@@ -16,7 +16,6 @@ public class BallController : GraspBehaviour
     private Hand follow;
     private float puttCoolDown = 1.0f;
     private float lastPuttTime = 0.0f;
-    private int putts = 0;
     private float holeTime;
     private Vector3 lastPosition; // get ball back when out of bounce
     private Vector3 initialPosition; // put ball back after one roundVector3 lastNetworkedPosition;
@@ -53,7 +52,6 @@ public class BallController : GraspBehaviour
         holeTime += Time.deltaTime;
         // player has finished, move to the next player
         if (holeTime >= minHoleTime){
-            Debug.Log("I'm in the hole and it took me " + putts + " putts to get in.");
             StartAnotherRound();
         }
 
@@ -80,10 +78,9 @@ public class BallController : GraspBehaviour
         // if club collide with the ball
         if (collision.collider.tag == "Putt"){
             if (Time.time > lastPuttTime + puttCoolDown){
-                putts++;
+                scoreBoard.AddPutt();
                 lastPuttTime = Time.time;
                 lastPosition = ball.position;
-                scoreBoard.changePuttNumber(putts);
             }
         }
     }
@@ -103,7 +100,7 @@ public class BallController : GraspBehaviour
 
     private void StartAnotherRound(){
         holeTime = 0;
-        putts = 0;
+        scoreBoard.ResetPutts();
         BackToInitialPosition(); // move ball back
     }
 }

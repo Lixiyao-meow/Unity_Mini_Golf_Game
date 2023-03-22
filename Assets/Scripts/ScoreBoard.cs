@@ -5,8 +5,16 @@ public class ScoreBoard: MonoBehaviour
 {
     public Text puttsCounter;
 
-    public void changePuttNumber(int putts)
+    private int putts;
+
+    public void AddPutt()
     {
+        putts++;
         puttsCounter.text = putts.ToString();
+    }
+
+    public void ResetPutts()
+    {
+        putts = 0;
     }
 }
