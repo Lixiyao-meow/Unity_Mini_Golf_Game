@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6007502702486266506}
   - component: {fileID: 4944805335715448620}
   - component: {fileID: 4944805335715448623}
-  - component: {fileID: 6225987813298235555}
   m_Layer: 0
   m_Name: crops_bambooStageA
   m_TagString: Teleport
@@ -115,15 +114,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.34009457, y: 0.54899997, z: 0.30800778}
   m_Center: {x: -0.006770499, y: 0.27449998, z: 0.0072238967}
---- !u!114 &6225987813298235555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5214626931198853983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd9f708b0749564282f8fd5aef34957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4970502512806123594}
   - component: {fileID: 4970502512806123593}
   - component: {fileID: 4970502512806123598}
-  - component: {fileID: -6541467487559400434}
   m_Layer: 0
   m_Name: cactus_short
   m_TagString: Teleport
@@ -116,15 +115,3 @@ CapsuleCollider:
   m_Height: 0.53299993
   m_Direction: 1
   m_Center: {x: 0.0024956986, y: 0.26649997, z: -0.031244598}
---- !u!114 &-6541467487559400434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4970502512806123605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd9f708b0749564282f8fd5aef34957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4645289216764644057}
   - component: {fileID: 6320507751143914354}
   - component: {fileID: 6320507751143914355}
-  - component: {fileID: -8332281676250448863}
   m_Layer: 0
   m_Name: stone_smallD
   m_TagString: Teleport
@@ -115,15 +114,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.425744, y: 0.23091199, z: 0.36870518}
   m_Center: {x: 0, y: 0.11545599, z: 0}
---- !u!114 &-8332281676250448863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6590909883667327756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd9f708b0749564282f8fd5aef34957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

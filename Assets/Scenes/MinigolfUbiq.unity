@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17749253, g: 0.22221655, b: 0.30437875, a: 1}
+  m_IndirectSpecularColor: {r: 0.17757998, g: 0.22232358, b: 0.30451977, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -704,11 +704,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1571909054}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 6728261216555938596, guid: 64b5a1f020b77404b9e4bfab9ccfc315, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1135,11 +1135,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1571909054}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1721839940610700204, guid: ebffac69c4b89684fa73554b1c4446e8, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1579,11 +1579,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1571909054}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 528533284867221570, guid: b9e7569d85676b74e99c2acf3f5312eb, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2111,11 +2111,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1571909054}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 6590909883667327756, guid: 3aae4d0839a5fa242bd1701aa79a9d97, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2306,11 +2306,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1571909054}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 515122119680962408, guid: 2a77392659570744489ed34114f4d2d7, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3701,11 +3701,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1571909054}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 5214626931198853983, guid: 66b8320b2b58b2c47b8e6ec23aeb23dc, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4499,11 +4499,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1571909054}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 5950795409782598380, guid: f05c523d48dbf33479b393cf347e14ee, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7289,6 +7289,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 4970502512806123605, guid: 0610fae9478d4ae43873cb4435af8589, type: 3}
+  cactus: {fileID: 4970502512806123605, guid: 0610fae9478d4ae43873cb4435af8589, type: 3}
+  pumpkin: {fileID: 583520324752749101, guid: 502f71f550d4d3647bffa132fa16fedf, type: 3}
+  red_flower: {fileID: 1721839940610700204, guid: ebffac69c4b89684fa73554b1c4446e8, type: 3}
+  yellow_flower: {fileID: 5950795409782598380, guid: f05c523d48dbf33479b393cf347e14ee, type: 3}
+  purple_flower: {fileID: 515122119680962408, guid: 2a77392659570744489ed34114f4d2d7, type: 3}
+  mushroom: {fileID: 6728261216555938596, guid: 64b5a1f020b77404b9e4bfab9ccfc315, type: 3}
+  bamboo: {fileID: 5214626931198853983, guid: 66b8320b2b58b2c47b8e6ec23aeb23dc, type: 3}
+  carrot: {fileID: 6019488969573729853, guid: 702a1fc7fec5bd44bae457d773036ac0, type: 3}
+  turnip: {fileID: 528533284867221570, guid: b9e7569d85676b74e99c2acf3f5312eb, type: 3}
+  stone: {fileID: 6590909883667327756, guid: 3aae4d0839a5fa242bd1701aa79a9d97, type: 3}
 --- !u!114 &1571909055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7419,10 +7429,10 @@ MonoBehaviour:
       - m_Target: {fileID: 1571909054}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 4970502512806123605, guid: 0610fae9478d4ae43873cb4435af8589, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7805,11 +7815,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1571909054}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 583520324752749101, guid: 502f71f550d4d3647bffa132fa16fedf, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8171,7 +8181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc46134b7a0d4306912e567774c0c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 0}
 --- !u!1001 &1800663472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9695,11 +9704,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1571909054}
         m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
         m_MethodName: Spawn
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 6019488969573729853, guid: 702a1fc7fec5bd44bae457d773036ac0, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

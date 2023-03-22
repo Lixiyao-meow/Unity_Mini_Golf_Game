@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5302289914831981369}
   - component: {fileID: 6797076653218749297}
   - component: {fileID: 6797076653218749296}
-  - component: {fileID: -5609292999814316204}
   m_Layer: 0
   m_Name: flower_yellowA
   m_TagString: Teleport
@@ -117,15 +116,3 @@ CapsuleCollider:
   m_Height: 0.19249998
   m_Direction: 1
   m_Center: {x: -0.024985736, y: 0.09624999, z: 0}
---- !u!114 &-5609292999814316204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5950795409782598380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddd9f708b0749564282f8fd5aef34957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
