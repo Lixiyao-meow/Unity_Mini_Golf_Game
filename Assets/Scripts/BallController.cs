@@ -10,14 +10,13 @@ using Ubiq.Messaging;
 public class BallController : GraspBehaviour
 {
     public float minHoleTime;
-    public Text puttsCounter;
-    public ClubController club;
+    public ScoreBoard scoreBoard;
 
     private Rigidbody ball;
     private Hand follow;
     private float puttCoolDown = 1.0f;
     private float lastPuttTime = 0.0f;
-    private int putts;
+    private int putts = 0;
     private float holeTime;
     private Vector3 lastPosition; // get ball back when out of bounce
     private Vector3 initialPosition; // put ball back after one roundVector3 lastNetworkedPosition;
@@ -84,7 +83,7 @@ public class BallController : GraspBehaviour
                 putts++;
                 lastPuttTime = Time.time;
                 lastPosition = ball.position;
-                puttsCounter.text = putts.ToString();
+                scoreBoard.changePuttNumber(putts);
             }
         }
     }
@@ -105,8 +104,6 @@ public class BallController : GraspBehaviour
     private void StartAnotherRound(){
         holeTime = 0;
         putts = 0;
-        // puttsCounter.text = putts.ToString();
         BackToInitialPosition(); // move ball back
-        club.BackToInitialPosition(); // move club back
     }
 }

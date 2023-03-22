@@ -29,8 +29,8 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
 
     private void Start()
     {
-        context = NetworkScene.Register(this);
-        body = GetComponent<Rigidbody>();
+        //context = NetworkScene.Register(this);
+        //body = GetComponent<Rigidbody>();
     }
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage msg)
@@ -87,6 +87,10 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
     // Start is called before the first frame update
     internal virtual void Awake()
     {
+        var networkScene = GameObject.FindObjectOfType<NetworkScene>();
+        Debug.Log(System.DateTimeOffset.Now.Ticks);
+        Debug.Log(this.gameObject.name + " : " + networkScene);
+        Debug.Log(networkScene.enabled);
         context = NetworkScene.Register(this);
         body = GetComponent<Rigidbody>();
     }

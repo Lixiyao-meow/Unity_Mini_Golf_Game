@@ -49,10 +49,4 @@ public class ClubController : GraspBehaviour
         base.Update();
     }
 
-    public void BackToInitialPosition(){
-        club.MovePosition(initialPosition);
-        club.velocity = Vector3.zero;
-        club.angularVelocity = Vector3.zero;
-        club.isKinematic = true;
-    }
 }
