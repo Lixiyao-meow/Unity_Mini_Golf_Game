@@ -36,6 +36,7 @@ public class Spawner : MonoBehaviour
     public GameObject patch16;
     public GameObject patch17;
     public GameObject patch18;
+    public GameObject patch19;
 
 
     NetworkContext context;
@@ -82,6 +83,7 @@ public class Spawner : MonoBehaviour
         if (id == 26) return patch16;
         if (id == 27) return patch17;
         if (id == 28) return patch18;
+        if (id == 29) return patch19;
 
         return null;
     }
