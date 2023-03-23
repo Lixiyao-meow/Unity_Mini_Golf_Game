@@ -79,6 +79,9 @@ public class PatchGraspBehaviour : MonoBehaviour, IGraspable
     {
         hand = null;
         body.velocity = controller.velocity;
+        Vector3 pos = transform.position;
+        pos.y = 0f;
+        transform.position = pos;
     }
     
     // Start is called before the first frame update

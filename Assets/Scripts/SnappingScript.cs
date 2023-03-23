@@ -28,6 +28,32 @@ public class SnappingScript : MonoBehaviour
         if (offset < snapDistance)
         {
             Vector3 newPos = transform.position;
+            newPos.y = 0;
+            Quaternion newRot = transform.rotation;
+            newRot.x = 0;
+            newRot.z = 0;
+
+            float valy = 0f;
+
+            if (newRot.eulerAngles.y > 45 && newRot.eulerAngles.y <= 135)
+            {
+                valy = 90;
+            }
+            else if (newRot.eulerAngles.y > 135 && newRot.eulerAngles.y <= 225)
+            {
+                valy = 180;
+            }
+            else if (newRot.eulerAngles.y > 225 && newRot.eulerAngles.y <= 315)
+            {
+                valy = 270;
+            }
+            else
+            {
+                valy = 0;
+            }
+
+            transform.rotation = Quaternion.Euler(0f, valy, 0f); ;
+
             if (Math.Abs(otherSnapComponent.transform.position.x - transform.position.x) < Math.Abs(otherSnapComponent.transform.position.z - transform.position.z))
                 newPos.x = otherSnapComponent.transform.position.x;
             else
