@@ -1,23 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using Ubiq.XR;
 using UnityEngine;
-using Ubiq.Spawning;
-using Ubiq.Messaging;
 
 public class ClubController : GraspBehaviour
 {
     public Transform visual;
-    private Quaternion relativeRotation;
-    
-    private Hand follow;
-    private Rigidbody club;
-    private Vector3 initialPosition;
     public BallController myBall;
     
-    Vector3 lastPosition;
-
     void Start()
     {
     }
@@ -25,8 +13,6 @@ public class ClubController : GraspBehaviour
     internal override void Awake()
     {
         base.Awake();
-        club = GetComponent<Rigidbody>();
-        initialPosition = club.position;
     }
 
     public override void Grasp(Hand controller)

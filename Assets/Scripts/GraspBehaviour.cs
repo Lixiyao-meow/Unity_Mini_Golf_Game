@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Linq;
 using Ubiq.XR;
 using Ubiq.Messaging;
 
@@ -29,7 +25,6 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
 
     private void Start()
     {
-        // context = NetworkScene.Register(this);
     }
 
     public void ProcessMessage(ReferenceCountedSceneGraphMessage msg)
@@ -37,7 +32,6 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
         float currentTime = Time.time;
         if (currentTime - lastTime < 2f)
         {
-            //Debug.Log("Less than 2 seconds have passed since last time");
             return;
         }
         owner = false;
@@ -95,7 +89,6 @@ public class GraspBehaviour : MonoBehaviour, IGraspable
         float currentTime = Time.time;
         if (currentTime - lastTimeBall < 2f)
         {
-            //Debug.Log("Less than 2 seconds have passed since last time for the ball");
             return;
         }
         lastTimeBall = currentTime;

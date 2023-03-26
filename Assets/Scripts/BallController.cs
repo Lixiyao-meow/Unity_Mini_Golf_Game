@@ -1,11 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Linq;
-using Ubiq.XR;
-using Ubiq.Spawning;
-using Ubiq.Messaging;
 
 public class BallController : GraspBehaviour
 {
@@ -13,7 +6,6 @@ public class BallController : GraspBehaviour
     public ScoreBoard scoreBoard;
 
     private Rigidbody ball;
-    private Hand follow;
     private float puttCoolDown = 1.0f;
     private float lastPuttTime = 0.0f;
     private float holeTime;
