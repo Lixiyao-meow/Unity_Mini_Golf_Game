@@ -1,4 +1,4 @@
-# Unity_Mini_Golf_Game
+# Unity Mini Golf Game
 
 This game is designed to be played in a VR headset. Please note that we have only tested the game on the Oculus Quest 2 headset.
 
