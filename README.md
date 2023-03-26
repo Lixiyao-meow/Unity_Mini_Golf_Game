@@ -17,13 +17,13 @@ If playing in Unity:
 ## Screenshots
 
 - Start scene:
-<img src="https://github.com/Lixiyao-meow/Unity_Mini_Golf_Game/blob/main/Recordings/start_scene.png" width="720">
+<img src="https://github.com/Lixiyao-meow/Unity_Mini_Golf_Game/blob/main/img/start_scene.png" width="720">
 
 - View from the top:
-<img src="https://github.com/Lixiyao-meow/Unity_Mini_Golf_Game/blob/main/Recordings/full_scene.png" width="720">
+<img src="https://github.com/Lixiyao-meow/Unity_Mini_Golf_Game/blob/main/img/full_scene.png" width="720">
 
 - Snapping scene:
-<img src="https://github.com/Lixiyao-meow/Unity_Mini_Golf_Game/blob/main/Recordings/snapping.png" width="720">
+<img src="https://github.com/Lixiyao-meow/Unity_Mini_Golf_Game/blob/main/img/snapping.png" width="720">
 
 ## Credits
 
