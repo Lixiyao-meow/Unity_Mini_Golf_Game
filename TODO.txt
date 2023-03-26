@@ -1,5 +1,0 @@
-- Add Teleport Tag to ground
-- Add second scene into the main scene
-- Fix gravity
-
-- Q: Networking for spawning
