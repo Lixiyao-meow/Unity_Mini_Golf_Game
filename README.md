@@ -16,4 +16,17 @@ If playing in Unity:
 
 ## Screenshots
 
-![result](https://github.com/Lixiyao-meow/Unity_Mini_Golf_Game/blob/main/Recordings/full_scene.png)
+- Start scene:
+<img src="https://github.com/Lixiyao-meow/Unity_Mini_Golf_Game/blob/main/Recordings/start_scene.png" width="720">
+
+- View from the top:
+<img src="https://github.com/Lixiyao-meow/Unity_Mini_Golf_Game/blob/main/Recordings/full_scene.png" width="720">
+
+- Snapping scene:
+<img src="https://github.com/Lixiyao-meow/Unity_Mini_Golf_Game/blob/main/Recordings/snapping.png" width="720">
+
+## Credits
+
+- Min golf assets: https://www.kenney.nl/assets/minigolf-kit
+- Nature assets: https://www.kenney.nl/assets/nature-kit
+- UCL Ubiq: https://github.com/UCL-VR/ubiq
