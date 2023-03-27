@@ -27,6 +27,6 @@ If playing in Unity:
 
 ## Credits
 
-- Min golf assets: https://www.kenney.nl/assets/minigolf-kit
+- Mini golf assets: https://www.kenney.nl/assets/minigolf-kit
 - Nature assets: https://www.kenney.nl/assets/nature-kit
 - UCL Ubiq: https://github.com/UCL-VR/ubiq
